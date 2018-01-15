@@ -1,4 +1,4 @@
-var timer = 0;
+var timer = 180;
 
 function sleep(milliseconds) {
     var start = new Date().getTime();
@@ -9,7 +9,13 @@ function sleep(milliseconds) {
     }
 }
 
-while (timer < 1000) {
-    console.log(timer ++)
+while (timer > 0) {
+    if (timer => 165){
+        console.log(autonomous)
+    } if (timer < 165){
+        console.log(teleop)
+    }
     sleep(1000)
+    console.log(timer --)
 }
+// countdown timer
