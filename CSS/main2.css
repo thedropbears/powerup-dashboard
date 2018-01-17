@@ -1,6 +1,14 @@
-Box1{
+.Box1{
     margin:10px;
     border:solid black;
     padding:5px;
     background-color:white;
+}
+span,p,div{
+    text-align: center;
+}
+.Camera{
+    text-align: center;
+    border: solid black;
+    padding: 3px;
 }
