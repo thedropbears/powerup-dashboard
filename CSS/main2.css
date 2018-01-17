@@ -1,10 +1,9 @@
 .Box1{
     margin:10px;
     border:solid black;
-    padding:5px;
     background-color:white;
-    padding-bottom:25%;
-    margin-bottom:25px;
+    padding-bottom:10%;
+    margin-bottom:35px;
 }
 span,p,div{
     text-align: center;
