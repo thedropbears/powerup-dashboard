@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html style='background-color:gray;'>
+    <html lang="en-US">
+    <head>
+        <title>4774 - Dashboard</title>
+    </head>
+
+    <body>
+        <div style='border:2px solid black;margin:10px;padding:5px'>
+            <!--
+                Camera
+            !-->
+            <!--Rigt Side!-->
+            <!--
+                Icons // Start of First Box
+            !-->
+            <div style='border:2px solid black;margin-left:75%;margin-right:10px; padding:25px;padding-bottom:40px;background-color:darkgray' width='10px;'>
+            <div style = 'border:2px solid black;background-color:white; padding-top:10px'>
+                <span>
+                    <img src='Icons/FI/no_cube.png' width=75px style='padding-left:15px;padding-right:15px;'>
+                    <img src='Icons/FI/no_scale.png' width=90px height='86px' style='padding-left:15px;padding-right:15px;'>
+                </span>
+                <hr>
+                <span>
+                    <img src='Icons/FI/down.png' width=75px style='padding-left:15px;padding-right:15px;'>
+                    <img src='Icons/FI/up.png' width=95px style='padding-left:15px;padding-right:15px;'>
+                </span>
+            </div>
+            <!--
+                End of First Box
+            !-->
+            <!--
+                Start of Second box // User Inputs -Automation Mode -Checklist
+            !-->
+            <div style ='border:2px solid crimson;background-color: white;padding-top:15px;padding-bottom:15px;margin-left:0;margin-right:0%'>
+                <span style="border:solid black;padding: 2px;margin-left:2%;margin-right:2%" ><select onclick="Auto()" class="dropbtn" style='margin-left:3px'>Auto Mode
+                    <option>Select an option</option>
+                    <option>Double Scale</option>
+                    <option>1 Switch 1 Scale</option>
+                </select>
+                <button onclick="IB()">Confirm</button>
+            </span>
+                <!--
+                    Modes:
+                    DOuble Switch
+                    Double scale
+
+                    Tutorial:
+                    https://www.youtube.com/watch?v=rUjiGOct808
+                !-->
+                <hr />
+                <span style="border:solid black;padding:2px;margin-left:2%;margin-right:2%">
+                        <!--
+                           Insert Checklist
+                        !-->
+                    <select onclick="Auto()" class="dropbtn" style='margin-left:3px'>Auto Mode
+                            <option>Checklist</option>
+                            <option>///</option>
+                            <option>///</option>
+                            <option>///</option>
+                            <option>///</option>
+                        </select>
+                        <button onclick="IB()">Mark</button>
+                    </span>
+                </div>
+            <!--
+                End of 2nd Box
+            !-->
+            <!-- 
+                Box 3 // Time -Timer -Cycle Times
+            !-->
+            <div style='border:2px solid crimson;padding-top:5px;padding-bottom:5px;margin-top:10px;background-color:white'>
+                <span id="Timr"></span>
+                <hr>
+                <span>Cycle Time</span>
+            </div>
+            <div style='padding:2px;margin:0;background-color:white;padding-top:10px;padding-bottom:15px;border: 2px solid red'>
+                <span style="border: solid black;margin:5px;">Speed</span>
+                <hr>
+                    <!--
+                        Insert Java script for Speed here
+                    !-->
+            </div>
+            <div style='border:2px solid crimson;padding-top:80px;padding-bottom:80px;margin-left:-385%;margin-right:420%;margin-top:-190%;background-color:white'>Speed&Direction
+            </div>
+            <div style='border:2px solid crimson;padding-top:80px;padding-bottom:80px;margin-left:-385%;margin-right:420%;margin-top:-3%;margin-bottom:100%;background-color:white'>Orientation
+            </div>
+        </div>
+        </div>
+        <!-- 
+            End of Right section
+        !-->
+        <div style="border: solid black;padding:10px;margin:10px;background-color:darkgray">
+            <!--
+                Box 1 // Driver Instructions
+            !-->
+            <div>
+                    Driver Instructions
+            </div>
+        </span>
+        <script src="JS/Timer.js"></script>
+    </body>
+</html>
+<script>
+    function IB(){
+        alert('Not complete')
+    }
+</script>
