@@ -11,7 +11,7 @@ interval = setInterval(function() {
     }
     */
     //Uncomment the above code for auto and teleop code
-    console.log('\033c')
+    console.log('\033c');
     console.log(timer --);
 }, delayInMilliseconds);
 
