@@ -18,12 +18,13 @@
     margin-top:15%;
     padding-left:30%;
     padding-right:30%;
+    border:solid black;
 }
 .BBR{
     border:solid black;
     padding-left:8%;
     padding-right:8%;
-    margin-top:0.1%;
     padding-top:0.1%;
-    padding-bottom:0.1%;
+    padding-bottom:0.1%; 
+    margin-left:64.5%;   
 }
