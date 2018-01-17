@@ -4,6 +4,7 @@
     background-color:white;
     padding-bottom:10%;
     margin-bottom:35px;
+    padding-top:10%;
 }
 span,p,div{
     text-align: center;
@@ -21,4 +22,9 @@ span,p,div{
     border:solid black;
     padding-top:29%;
     padding-bottom:29%;
+}
+.Box2{
+    margin-top:0;
+    border: solid black;
+    padding-top:;
 }
