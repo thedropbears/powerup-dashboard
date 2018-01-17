@@ -11,6 +11,6 @@ function sleep(milliseconds) {
 
 while (timer > 0) {
     sleep(1000)
-    document.writeln(timer);
+    document.getElementById("Timer" = timer);
 }
 // countdown timer
