@@ -1,0 +1,14 @@
+.TB{
+    border:solid black;
+    padding:5%;
+}
+.TBR{
+    border:solid black;
+    padding:1.5%;
+    margin-left:5%;
+    margin-right:5%;
+}
+.BR{
+    border:solid black;
+    margin-top:0.1%;
+}
