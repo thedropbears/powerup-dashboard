@@ -11,4 +11,12 @@
 .BR{
     border:solid black;
     margin-top:0.1%;
+    padding-bottom:47%;
+}
+.Camera{
+    padding-bottom:47%;
+    border:solid black;
+    margin-top:15%;
+    padding-left:30%;
+    padding-right:30%;
 }
