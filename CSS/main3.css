@@ -9,8 +9,8 @@
 .TBR{
     border:solid black;
     padding:1.5%;
-    margin-left:1%;
-    margin-right:1%;
+    margin-left:1.5%;
+    margin-right:1.5%;
     font-size:150%;
     background-color: white;
 }
@@ -62,12 +62,12 @@
     background-color:white;
 }
 .Arrows{
-    width:3%;
-    height:3%;
+    width:4%;
+    height:4%;
     background-color:white;
 }
 .DArrow{
-    width:2.5%;
-    height:2.5%;
+    width:3%;
+    height:3%;
     background-color:white;
 }
