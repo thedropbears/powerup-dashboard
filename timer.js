@@ -1,16 +1,21 @@
 //"use strict";
-var timer = 180;
+var timer = 5;
 var delayInMilliseconds = 1000;
 var interval = 0;
+var refresh = setInterval(timer_app, delayInMilliseconds);
 
-interval = setInterval(function() {
+function timer_app(){
     console.log('\033c');
+    if (timer <= 0){
+        console.log("END GAME");
+        clearInterval(refresh);
+    }
     if (timer <= 164){
         console.log(timer-- + " TELEOP");
     }
     if (timer >= 165){
         console.log(timer-- + " AUTONOMOUS");
     }
-}, delayInMilliseconds);
+}
 
 // countdown timer
