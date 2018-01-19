@@ -51,38 +51,29 @@
             <!--Dropdowns!-->
             <div class=BBR>
             <b style="background-color:white;font-size:125%">Selector</b>
+            <hr>
                 <span style="background-color:white;">
-                    <select style="background-color:white;">
-                        <option style="background-color:white;">
-                        Auto Mode
-                        </option>
-                        <option style="background-color:white;">
-                            Double Scale
-                        </option>
-                        <option style="background-color:white;">
-                            1 Scale 1 Switch
-                        </option>
-                    </select>
-                    <button style="background-color:white;margin:0.5%;margin-left:3%;">
+                    <form action="radio" name="Strategy" style="background-color:white">
+                        <input type="radio" name="DS" value="Double Scale"> Double Scale <br>
+                        <input type="radio" name="SSS" value="1each"> 1 switch 1 Scale 
+                    </form>
+                    <button style="background-color:white;"id=S>
                         Confirm
                     </button>
                 </span>
+                <hr>
                 <span style="background-color:white;">
-                    <select style="background-color:white;">
-                        <option style="background-color:white;">
-                            Starting Position
-                        </option>
-                        <option style="background-color:white;">
-                            Left
-                        </option>
-                        <option style="background-color:white;">
+                    <form style="background-color:white;" id=SP>
+                    <b style="background-color:white;"> Starting Position:</b>
+                        <br>
+                        <input type="radio" name="LeftSP" value="Left">
+                            Left    <br>
+                        <input type="radio" name="RightSP" value"Right">
                             Right
-                        </option>
-                    </select>
-                    <button style="background-color:white;margin:0.5%;margin-left:3%;">
-                        Confirm
-                    </button>
+                    </form>
+                    <button onclick=null style=background-color:white;>Confirm</button>
                 </span>
+                <hr>
                 <span style="background-color:white;">
                     <select style="background-color:white;">
                         <option style="background-color:white;">
