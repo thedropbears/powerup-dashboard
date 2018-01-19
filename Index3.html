@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <link href="CSS/main3.css" rel="stylesheet" type="text/css">
+    <header>
+        <title>
+            4774-Dashboard
+        </title>
+    </header>
+    <body>
+        <!--Top Bar!-->
+        <div class="TB">
+            <span class="TBR" style="margin-left:7.5%">
+                <span style="background-color:white;">
+                    <img src="Icons/FI/no_scale.png" class=Scale>
+                </span>
+                <span style="background-color:white;">
+                    <img src="Icons/FI/no_cube.png" class=Cube>
+                </span>
+                <span style="background-color:white;">
+                    <img src="Icons/FI/up.png" class=Arrows>
+                </span>
+                <span style="background-color:white;">
+                    <img src="Icons/FI/down.png" class=DArrow>
+                </span>    
+            </span>
+            <span class="TBR">
+                <span id=MTimer class="BBox">
+                    Main Timer
+                </span>
+                <span id=Timer class="BTBox">
+                    Cycle Timer
+                </span>
+            </span>
+            <span class="TBR" id=Direction>
+                Direction
+            </span>
+            <span class="TBR" id=Speed>
+                Speed
+            </span>
+            <span class="TBR" id=Orientation>
+                Orientation
+            </span>
+        <!--TopBar!-->
+        </div>
+        <!--Bottom Sector!-->
+        <div class=BR>
+            <!--Camera!-->
+            <span class=Camera id=Camera>
+                Camera
+            </span>
+            <!--Dropdowns!-->
+            <div class=BBR>
+            <b style="background-color:white;font-size:125%">Selector</b>
+            <hr>
+                <span style="background-color:white;">
+                   <b style="background-color:white;"> Autonomous </b>
+                    <form action="radio" name="Strategy" style="background-color:white">
+                        <input type="radio" name="Strategy" value="2S"> Double Scale <br> <br>
+                        <input type="radio" name="Strategy" value="1S1S"> 1 switch 1 Scale <br> <br>
+                        <input type="submit" value="Submit" style="background-color:white;margin-left:23.5%">
+                    </form>
+                </span>
+                <hr>
+                <span style="background-color:white;">
+                    <form style="background-color:white;" id=SP>
+                    <b style="background-color:white;"> Starting Position:</b>
+                        <br>
+                        <input type="radio" name="SP" value="Left">
+                            Left    <br> <br>
+                        <input type="radio" name="SP" value"Right">
+                            Right   <br> <br>
+                        <input type="submit" value="Submit" style="background-color:white;margin-left:23.5%">
+                    </form>
+                </span>
+                <hr>
+                <span style="background-color:white;">
+                        <form style="background-color: white;">
+                            §§§<input type="checkbox">
+                            §§§<input type="checkbox">
+                            §§§<input type="checkbox">
+                            §§§<input type="checkbox">
+                            §§§<input type="checkbox">
+                            §§§<input type="checkbox">
+                        </form>
+                </span>
+            </span>
+        </div> 
+        <!--Javascript!-->
+        <script src=null>
+        </script>
+    </body>
+</html>

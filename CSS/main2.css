@@ -1,0 +1,30 @@
+.Box1{
+    margin:10px;
+    border:solid black;
+    background-color:white;
+    padding-bottom:10%;
+    margin-bottom:35px;
+    padding-top:10%;
+}
+span,p,div{
+    text-align: center;
+}
+.Camera{
+    text-align: center;
+    border: solid black;
+    padding-bottom: 25%;
+    padding-top: 25%;
+    padding-left: 35%;
+    padding-right: 35%;
+}
+.Page{
+    size:100%;
+    border:solid black;
+    padding-top:29%;
+    padding-bottom:29%;
+}
+.Box2{
+    margin-top:0;
+    border: solid black;
+    padding-top:;
+}
