@@ -4,9 +4,10 @@
 }
 .TBR{
     border:solid black;
-    padding:3.5%;
+    padding:1.5%;
     margin-left:2.5%;
     margin-right:2.5%;
+    font-size:150%;
 }
 .BR{
     border:solid black;
