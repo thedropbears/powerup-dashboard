@@ -1,3 +1,4 @@
+"use strict";
 var timer = 180;
 var delayInMilliseconds = 1000;
 var interval = 0;
