@@ -1,14 +1,14 @@
 var Cube = false;
 var Scale = false;
-if(Cube==false){
-    document.getElementById('cube') = "no_cube.png";
+if(Cube===false){
+    document.getElementById('cube').innerHTML = "no_cube.png";
 }
-if(Cube==true){
-    document.getElementById('cube') = "cube.png";
+if(Cube===true){
+    document.getElementById('cube').innerHTML = "cube.png";
 }
-if(Scale == false){
-    document.getElementById('scale') = "no_scale.png";
+if(Scale === false){
+    document.getElementById('scale').innerHTML = "no_scale.png";
 }
-if(Scal == true){
-    document.getElementById('scale') = "scale.png"
+if(Scal === true){
+    document.getElementById('scale').innerHTML = "scale.png";
 }

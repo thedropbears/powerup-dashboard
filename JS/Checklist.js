@@ -11,7 +11,7 @@ var Task10 = "";
 
 var TaskNm = 0;
 function NextT(){
-    if(TaskNm == 0){
+    if(TaskNm === 0){
         document.getElementById("CL").innerHTML = Task1;
     }
     if(TaskNm == 1){
