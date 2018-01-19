@@ -1,19 +1,16 @@
-"use strict";
+//"use strict";
 var timer = 180;
 var delayInMilliseconds = 1000;
 var interval = 0;
 
 interval = setInterval(function() {
-    /*
-    if (timer => 165){
-       console.log("autonomous")
-    } if (timer < 165){
-        console.log("teleop")
+    console.log('\033c');
+    if (timer <= 164){
+        console.log(timer-- + " TELEOP");
     }
-    */
-    //Uncomment the above code for auto and teleop code
-    console.log('\033c')
-    console.log(timer --);
+    if (timer >= 165){
+        console.log(timer-- + " AUTONOMOUS");
+    }
 }, delayInMilliseconds);
 
 // countdown timer
