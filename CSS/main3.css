@@ -11,14 +11,15 @@
 }
 .BR{
     border:solid black;
-    margin-top:0.1%;
-    padding-bottom:47%;
+    margin-top:0.2%;
+    padding-bottom:38.5%;
 }
 .Camera{
     padding-bottom:47%;
     margin-top:15%;
     padding-left:42.30%;
     padding-right:42.30%;
+    margin-right:0.8%;
     border:solid black;
 }
 .BBR{
