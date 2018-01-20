@@ -1,5 +1,5 @@
 //"use strict";
-var timer = 5;
+var timer = 135;
 var delayInMilliseconds = 1000;
 var interval = 0;
 var refresh = setInterval(timer_app, delayInMilliseconds);
@@ -10,10 +10,10 @@ function timer_app(){
         console.log("END GAME");
         clearInterval(refresh);
     }
-    if (timer <= 164){
+    if (timer <= 119){
         console.log(timer-- + " TELEOP");
     }
-    if (timer >= 165){
+    if (timer >= 120){
         console.log(timer-- + " AUTONOMOUS");
     }
 }
