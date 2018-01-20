@@ -16,6 +16,6 @@ function timer_app(){
     if (timer >= 120){
         console.log(timer-- + " AUTONOMOUS");
     }
-
+}
 
 // countdown timer
