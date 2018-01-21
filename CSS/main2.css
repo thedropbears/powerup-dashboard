@@ -1,0 +1,76 @@
+*{
+    background-color: black;
+    font-family: "Arial"; 
+    color: white;
+}
+.TB{
+    border:solid white;
+    padding:1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: black;
+}
+.TBR{
+    border:solid white;
+    padding:1.5%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    background-color: black;
+}
+.BR{
+    border:solid black;
+    margin-top:0.2%;
+    padding-bottom:3.5%;
+    background-color: black;
+}
+.Camera{
+    padding-bottom:0%;
+    padding-left:0%;
+    padding-right:0%;
+    margin-right:0.8%;
+    border:null;
+    background-color: black;
+}
+.BBR{
+    border:solid white;
+    padding-top:0.1%;
+    padding-bottom:0.1%; 
+    margin-left:89%;
+    background-color: black;  
+}
+.BBox{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.1%;
+    padding-bottom:0.1%; 
+    background-color: black;   
+}
+.BTBox{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.5%;
+    padding-bottom:0.1%; 
+    background-color: black;
+    font-size:75%;
+}
+.Scale{
+    width:7%;
+    height:7%;
+    background-color: black;
+}
+.Cube{
+    width:3.5%;
+    height:3.5%;
+    background-color: black;
+}
+.Arrows{
+    width:5%;
+    height:4.5%;
+    background-color: black;
+}
+.DArrow{
+    width:4%;
+    height:3.5%;
+    background-color: black;
+}

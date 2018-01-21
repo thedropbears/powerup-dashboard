@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+    <link id=Setting>
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
     <header>
@@ -10,17 +11,17 @@
     <body>
         <!--Top Bar!-->
         <div class="TB">
-            <span class="TBR" style="margin-left:1%;padding-top:2.5%">
-                <span style="background-color:white;">
+            <span class="TBR">
+                <span class="selector">
                     <img src="Images/no_scale.png" class=Scale>
                 </span>
-                <span style="background-color:white;">
+                <span class="selector">
                     <img src="Images/no_cube.png" class=Cube>
                 </span>
-                <span style="background-color:white;">
+                <span class="selector">
                     <img src="Images/up.png" class=Arrows>
                 </span>
-                <span style="background-color:white;">
+                <span class="selector">
                     <img src="Images/down.png" class=DArrow>
                 </span>    
             </span>
@@ -52,43 +53,38 @@
             </span>
             <!--Dropdowns!-->
             <div class=BBR>
-            <b style="background-color:white;font-size:125%">Selector</b>
+            <b class="selector">Selector</b>
             <hr>
-                <span style="background-color:white;">
-                   <b style="background-color:white;"> Autonomous </b>
-                   <select name="Autonomous" id="Auto" style="background-color:white;">
-                        <option value="2S" style="background-color:white;" id="">
-                            2 Scale
-                        </option>
-                        <option value="1S" style="background-color:white;" id="">
-                            1 Scale 1 Switch
-                        </option>
-                   </select>
-                   <button onclick="null" style=background-color:white;>Submit</button>
+                <span class="selector">
+                   <b class="selector"> Autonomous </b> <br> <br>
+                   <button class="selector" onclick="scale2()">2 Scale</button> <br> <br>
+                   <button class="selector" onclick="S1S1()">1 Switch 1 Scale</button>
                 </span>
                 <hr>
-                <span style="background-color:white;">
-                    <form style="background-color:white;" id=SP>
-                    <b style="background-color:white;"> Starting Position:</b>
-                        <br>
-                        <input type="radio" name="SP" value="Left" id="SPL">
-                            Left    <br> <br>
-                        <input type="radio" name="SP" value"Right" id="SPR">
-                            Right   <br> <br>
-                        <input type="submit" value="Submit" style="background-color:white;margin-left:23.5%">
-                    </form>
+                <span class="selector">
+                    <b class=selector>Starting Position</b>
+                    <button class=selector onclick="SPL()">Left</button> <br> <br>
+                    <button class="selector" onclick="SPR()">Right</button>
                 </span>
                 <hr>
-            <b style="background-color:white;"> Checklist: </b>
-                        <span style="background-color:white;">
-                        <form style="background-color: white;">
-                            §§§<input type="checkbox">
-                            §§§<input type="checkbox">
-                            §§§<input type="checkbox">
-                            §§§<input type="checkbox">
-                            §§§<input type="checkbox">
+            <b class="selector"> Checklist: </b>
+                        <span class="selector">
+                        <form class="selector">
+                            §§§<input type="checkbox"> <br>
+                            §§§<input type="checkbox"> <br>
+                            §§§<input type="checkbox"> <br>
+                            §§§<input type="checkbox"> <br>
+                            §§§<input type="checkbox"> <br>
                             §§§<input type="checkbox">
                         </form>
+                        <hr>
+                        <span>
+                            <form class="selector">
+                                <input type="radio"> Normiee <br> <br>
+                                <input type="radio"> REEEEEE <br> <br>
+                                <input type="submit" class="selector" value="LOL WOT">
+                            </form>
+                        </span>
                 </span>
             </span>
         </div> 
@@ -96,5 +92,16 @@
         <script src="mousestrap-master/moustrap.min.js"></script>
         <script src="JS/Hotkey.js"></script>
         <script src="JS/Camera.js"></script>
+        <!--<script src="JS/Color-changer.js">Normal()</script> !-->
+        <!--Test SCript    <script>
+            var x = 0;
+            function Timer(){
+                x = x + 1;
+                document.getElementById("CTimer").innerHTML = x;
+            }
+            while(x!=10){
+                setInterval(Timer(),1000);
+            }
+        </script> !-->
     </body>
 </html>

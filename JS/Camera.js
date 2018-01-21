@@ -18,5 +18,6 @@ function onValueChanged(key, value, isNew) {
             break;
 
         case "/SmartDashboard/reset_video":
-            resetVideo()
+            resetVideo()}
 break;
+}
