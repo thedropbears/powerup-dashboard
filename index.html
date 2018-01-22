@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <link id=Setting>
+    <span id=Theme></span>
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
     <header>
@@ -32,6 +33,7 @@
                 <span id=CTimer class="BTBox">
                     0000
                 </span>
+                <button id=button>Refresh</button>
             </span>
             <span class="TBR" id=Direction>
                 Direction
@@ -92,6 +94,18 @@
         <script src="mousestrap-master/moustrap.min.js"></script>
         <script src="JS/Hotkey.js"></script>
         <script src="JS/Camera.js"></script>
+        <script src="JS/Timer.js"></script>
+        <script src="JS/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(Timer){
+                        $("#MTimer").empty();
+                        $("#MTimer").append(timer);
+                        $("#button").click(function(){
+                            $("#MTimer").empty();
+                            $("#MTimer").append(timer)
+                            })
+                    })
+        </script>
         <!--<script src="JS/Color-changer.js">Normal()</script> !-->
         <!--Test SCript    <script>
             var x = 0;
