@@ -13,7 +13,6 @@ function timer_app(){
         //document.getElementById("MTimer").textContent=timer;
         timer = timer--
         text = document.createTextNode(timer);
-        span.empty()
         span.appendChild(text);
         clearInterval(refresh);
     }
@@ -24,7 +23,6 @@ function timer_app(){
         //document.getElementById("MTimer").textContent=timer;
         timer = timer--
         text = document.createTextNode(timer);
-        span.empty()
         span.appendChild(text);
     }
     if (timer >= 120){
@@ -33,7 +31,6 @@ function timer_app(){
         //document.getElementById("MTimer").textContent=timer;
         timer = timer--
         text = document.createTextNode(timer);
-        span.empty()
         span.appendChild(text);
     }
     
