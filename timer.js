@@ -11,7 +11,8 @@ function timer_app(){
     if (timer <= 0){
         //console.log("END GAME");
         //document.getElementById("MTimer").textContent=timer;
-        text = document.createTextNode(timer--);
+        timer = timer--
+        text = document.createTextNode(timer);
         span.empty()
         span.appendChild(text);
         clearInterval(refresh);
@@ -21,7 +22,8 @@ function timer_app(){
         //console.log(timer-- + " TELEOP");
         //console.log(timer--);
         //document.getElementById("MTimer").textContent=timer;
-        text = document.createTextNode(timer--);
+        timer = timer--
+        text = document.createTextNode(timer);
         span.empty()
         span.appendChild(text);
     }
@@ -29,7 +31,8 @@ function timer_app(){
         //console.log(timer-- + " AUTONOMOUS");
         //console.log(timer--);
         //document.getElementById("MTimer").textContent=timer;
-        text = document.createTextNode(timer--);
+        timer = timer--
+        text = document.createTextNode(timer);
         span.empty()
         span.appendChild(text);
     }
