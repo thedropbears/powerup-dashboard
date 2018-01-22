@@ -8,7 +8,7 @@ function timer_app(){
     //console.log('\033c');
     if (timer <= 0){
         //console.log("END GAME");
-        document.getElementById("MTimer").textContent="END GAME";
+        document.getElementById("MTimer").textContent=timer;
         clearInterval(refresh);
     }
     
