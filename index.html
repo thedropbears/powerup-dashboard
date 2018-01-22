@@ -5,7 +5,7 @@
     <link href="CSS/main.css" rel="stylesheet" type="text/css">
     <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
     <header>
-        <title>
+        <title style="background-color:black;">
             4774-Dashboard
         </title>
     </header>
@@ -79,14 +79,6 @@
                             §§§<input type="checkbox"> <br>
                             §§§<input type="checkbox">
                         </form>
-                        <hr>
-                        <span>
-                            <form class="selector">
-                                <input type="radio"> Normiee <br> <br>
-                                <input type="radio"> REEEEEE <br> <br>
-                                <input type="submit" class="selector" value="LOL WOT">
-                            </form>
-                        </span>
                 </span>
             </span>
         </div> 
@@ -98,13 +90,12 @@
         <script src="JS/jquery-3.3.1.min.js"></script>
         <script>
             $(document).ready(function(Timer){
+                setInterval(function(){
                         $("#MTimer").empty();
                         $("#MTimer").append(timer);
-                        $("#button").click(function(){
-                            $("#MTimer").empty();
-                            $("#MTimer").append(timer)
-                            })
-                    })
+                    },1000)})
+        </script>
+        <script>
         </script>
         <!--<script src="JS/Color-changer.js">Normal()</script> !-->
         <!--Test SCript    <script>

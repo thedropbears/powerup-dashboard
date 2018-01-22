@@ -10,9 +10,9 @@ function timer_app(){
         clearInterval(refresh);
     }
     if (timer <= 119){
-        console.log(timer--);
+        timer = timer - 1;
     }
     if (timer >= 120){
-        console.log(timer--);
+        timer = timer - 1;
     }
 }
