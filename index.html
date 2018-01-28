@@ -14,32 +14,28 @@
         <div class="TB">
             <span class="TBR">
                 <span class="selector">
-                    <img src="Images/no_scale.png" class=Scale>
+                    <img src="Images/no_scale.png" class=Scale id=Scale>
                 </span>
                 <span class="selector">
-                    <img src="Images/no_cube.png" class=Cube>
+                    <img src="Images/no_cube.png" class=Cube id=Cube>
                 </span>
                 <span class="selector">
-                    <img src="Images/up.png" class=Arrows>
+                    <img src="Images/up.png" class=Arrows id=Arrows>
                 </span>
                 <span class="selector">
-                    <img src="Images/down.png" class=DArrow>
+                    <img src="Images/down.png" class=DArrow id=Darrows>
                 </span>    
             </span>
             <span class="TBR">
                 <span id=MTimer class="BBox">
-                    0000
+                    135
                 </span>
                 <span id=CTimer class="BTBox">
                     0000
                 </span>
-                <button id=button>Refresh</button>
             </span>
             <span class="TBR" id=Direction>
                 Direction
-            </span>
-            <span class="TBR" id=Speed>
-                Speed
             </span>
             <span class="TBR" id=Orientation>
                 Orientation
@@ -57,16 +53,24 @@
             <div class=BBR>
             <b class="selector">Selector</b>
             <hr>
+            <span id=Connection class=BBox2>
+                Disconnected
+            </span>
+            <hr>
                 <span class="selector">
                    <b class="selector"> Autonomous </b> <br> <br>
-                   <button class="selector" onclick="scale2()">2 Scale</button> <br> <br>
-                   <button class="selector" onclick="S1S1()">1 Switch 1 Scale</button>
+                   <select name="" id="Auto" class="selector">
+                       <option value="" class="selector">1 Switch 1 Scale</option>
+                       <option value="" class="selector">2 Scale</option>
+                   </select>
                 </span>
                 <hr>
                 <span class="selector">
-                    <b class=selector>Starting Position</b>
-                    <button class=selector onclick="SPL()">Left</button> <br> <br>
-                    <button class="selector" onclick="SPR()">Right</button>
+                        <b class="selector">Starting Position</b> <br> <br>
+                    <select name="" id="SP" class="selector">
+                        <option value="" class="selector">Left</option>
+                        <option value="" class="selector">Right</option>
+                    </select>
                 </span>
                 <hr>
             <b class="selector"> Checklist: </b>
@@ -87,26 +91,20 @@
         <script src="JS/Hotkey.js"></script>
         <script src="JS/Camera.js"></script>
         <script src="JS/Timer.js"></script>
+        <script src="JS/CTimer.js"></script>
         <script src="JS/jquery-3.3.1.min.js"></script>
         <script>
             $(document).ready(function(Timer){
                 setInterval(function(){
                         $("#MTimer").empty();
                         $("#MTimer").append(timer);
-                    },1000)})
+                    },500)})
+
+        	$(document).ready(function(CTimer){
+                setInterval(function(){
+                        $("#CTimer").empty();
+                        $("#CTimer").append(Ctimer);
+                    },500)})
         </script>
-        <script>
-        </script>
-        <!--<script src="JS/Color-changer.js">Normal()</script> !-->
-        <!--Test SCript    <script>
-            var x = 0;
-            function Timer(){
-                x = x + 1;
-                document.getElementById("CTimer").innerHTML = x;
-            }
-            while(x!=10){
-                setInterval(Timer(),1000);
-            }
-        </script> !-->
     </body>
 </html>

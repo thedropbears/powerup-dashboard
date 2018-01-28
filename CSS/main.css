@@ -46,6 +46,14 @@
     padding-bottom:0.1%; 
     background-color:white;   
 }
+.BBox2{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.1%;
+    padding-bottom:0.1%; 
+    background-color:white;
+    color: red   
+}
 .BTBox{
     border:solid black;
     padding-top:0.1%;
