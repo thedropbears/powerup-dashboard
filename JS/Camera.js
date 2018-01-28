@@ -1,4 +1,4 @@
-var cameraStream1 = "http://10.47.74.11:5803/?action=stream"
+var cameraStream1 = "http://10.47.74.11:5803/?action=stream";
 var camera = 1;
 var targetRange = 4;
 
@@ -13,11 +13,11 @@ function resetVideo() {
 
 function onValueChanged(key, value, isNew) {
     switch (key) {
-        case "/SmartDashboard/camera":
-            switchCamera(value)
+        case "/SmartDashboard/camera";
+            switchCamera(value);
             break;
 
-        case "/SmartDashboard/reset_video":
+        case "/SmartDashboard/reset_video";
             resetVideo()}
 break;
 }

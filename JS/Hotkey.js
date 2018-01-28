@@ -1,1 +1,0 @@
-Mousestrap.bind("/")
