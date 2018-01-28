@@ -1,14 +1,14 @@
 var loop = 1;
-var currentGyro = 0
-var offsetGyro = 0
-var cameraStream1 = "http://10.47.74.11:5801/?action=stream"
-var cameraStream2 = "http://10.47.74.11:5802/?action=stream"
+var currentGyro = 0;
+var offsetGyro = 0;
+var cameraStream1 = "http://10.47.74.11:5801/?action=stream";
+var cameraStream2 = "http://10.47.74.11:5802/?action=stream";
 var reverse = false;
-var alliance = "red"
-var currentState = "stationary"
+var alliance = "red";
+var currentState = "stationary";
 var timerStart = false;
 var firstReset = false;
-var currentLifterHeight = "ground_height"
+var currentLifterHeight = "ground_height";
 
 $(document).ready(function () {
 
@@ -62,11 +62,11 @@ function switchCamera(value) {
 function resetGyro() {
 
     offsetGyro = currentGyro;
-    rotateCompass(currentGyro + Math.PI)
+    rotateCompass(currentGyro + Math.PI);
 }
 
 function resetLifterHeight() {
-	var currentLifterHeight = "ground_height"
+	var currentLifterHeight = "ground_height";
 }
 
 
@@ -187,10 +187,10 @@ function onValueChanged(key, value, isNew) {
 
         case "/SmartDashboard/alliance":
             if (isRedAlliance === true) {
-                alliance = "red"
+                alliance = "red";
                 document.documentElement.style.setProperty('--accent-colour', '#C62828')
             } else if (isRedAlliance === false) {
-                alliance = "blue"
+                alliance = "blue";
                 document.documentElement.style.setProperty('--accent-colour', '#3565bf')
             }
             $("#compass").attr("src", "img/robot" + alliance + ".png");
@@ -207,16 +207,16 @@ function onValueChanged(key, value, isNew) {
 
         case "/SmartDashboard/range":
             if (currentState === "unloadingGear") {
-            changeRobotRange(value)
+            changeRobotRange(value);
             }
             break;
         
         case "/SmartDashboard/camera":
-            switchCamera(value)
+            switchCamera(value);
             break;
 
         case "/SmartDashboard/reset_video":
-            resetVideo()
+            resetVideo();
             break;
         
     }
@@ -229,7 +229,7 @@ function changeRobotRange(dist) {
     }
     ypos += 1; // value from -1 to 1
     ypos = ypos * 50;
-    ypos = (ypos / 100) * 15
+    ypos = (ypos / 100) * 15;
     ypos = ypos + "em";
     document.getElementById("robotSVG").setAttribute("y", ypos);
 

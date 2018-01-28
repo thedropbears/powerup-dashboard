@@ -4,7 +4,7 @@ var targetRange = 4;
 
 $(document).ready(function () {
     $("#camera1").attr("src", cameraStream1);
-
+}
 function resetVideo() {
 
     if (camera === 1) {
