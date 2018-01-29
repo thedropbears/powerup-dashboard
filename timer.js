@@ -3,6 +3,7 @@ var timer = 135;
 var delayInMilliseconds = 1000;
 var interval = 0;
 var refresh = setInterval(timer_app, delayInMilliseconds);
+<<<<<<< HEAD
 var text = document.createTextNode("timer here");
 var span = document.getElementById("MTimer");
 
@@ -35,6 +36,21 @@ function timer_app(){
         span.appendChild(text)
     }
     
+=======
+
+function timer_app(){
+    console.log('\033c');
+    if (timer <= 0){
+        console.log("END GAME");
+        clearInterval(refresh);
+    }
+    if (timer <= 119){
+        console.log(timer-- + " TELEOP");
+    }
+    if (timer >= 120){
+        console.log(timer-- + " AUTONOMOUS");
+    }
+>>>>>>> dropbears/master
 }
 
 // countdown timer
