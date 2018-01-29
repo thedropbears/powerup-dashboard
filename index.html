@@ -17,7 +17,7 @@
                     <img src="Images/noscale.png" class=Scale id=Scale>
                 </span>
                 <span class="selector">
-                    <img src="Images/no_cube.png" class=Cube id=Cube>
+                    <img src="Images/cube.png" class=Cube id=Cube>
                 </span>
                 <span class="selector">
                     <img src="Images/up.png" class=Arrows id=Arrows>
@@ -50,7 +50,7 @@
             </img>
             </span>
             <!--Dropdowns!-->
-            <div class=BBR>
+            <div class=BBR style="display: block;" id="selector">
             <b class="selector">Selector</b>
             <hr>
             <span id=Connection class=BBox2>
@@ -59,19 +59,17 @@
             <hr>
                 <span class="selector">
                    <b class="selector"> Autonomous </b> <br> <br>
-                   <select name="" id="Auto" class="selector">
-                       <option value="" class="selector" onclick="function()">1 Switch 1 Scale</option>
-                       <option value="" class="selector" onclick="function()">2 Scale</option>
-                   </select>
                 </span>
                 <hr>
                 <span class="selector">
                         <b class="selector">Starting Position</b> <br> <br>
-                    <select name="" id="SP" class="selector">
-                        <option value="" class="selector">Left</option>
-                        <option value="" class="selector">Right</option>
+                    <select name="" id="SP" class="selector" onchange="null">
+                        <option value="" class="selector" id="left">Left</option>
+                        <option value="" class="selector" id=right>Right</option>
                     </select>
                 </span>
+                <hr>
+                <button onclick="CloseB()">Close Tab</button>
         </div> 
         <!--Javascript!-->
         <script src="mousestrap-master/moustrap.min.js"></script>
@@ -90,6 +88,10 @@
                         $("#CTimer").empty();
                         $("#CTimer").append(Ctimer);
                     },500)})
+        </script>
+        <script type="text/javascript">
+            function CloseB(){
+            document.getElementById('selector').style.display = "block";}
         </script>
     </body>
 </html>
