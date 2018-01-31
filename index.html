@@ -12,19 +12,6 @@
     <body>
         <!--Top Bar!-->
         <div class="TB">
-            <span class="TBR">
-                <span class="selector">
-                    <img src="Images/noscale.png" class=Scale id=Scale>
-                </span>
-                <span class="selector">
-                    <img src="Images/cube.png" class=Cube id=Cube>
-                </span>
-                <span class="selector">
-                    <img src="Images/up.png" class=Arrows id=Arrows>
-                </span>
-                <span class="selector">
-                    <img src="Images/down.png" class=DArrow id=Darrows>
-                </span>
             </span>
             <span class="TBR">
                 <span id=MTimer class="BBox">
@@ -33,12 +20,6 @@
                 <span id=CTimer class="BTBox">
                     15
                 </span>
-            </span>
-            <span class="TBR" id=Direction>
-                Direction
-            </span>
-            <span class="TBR" id=Orientation>
-                Orientation
             </span>
             <span class="TBR" id=Orientation>
                 <span class="selector">
@@ -56,39 +37,13 @@
         <!--TopBar!-->
         </div>
         <!--Bottom Sector!-->
-        <div class=BR>
-            <!--Camera!-->
-            <span class=Camera>
-            <img id="camera1" alt="Stream not found" style="background-color:white;font-size:150%;margin-bottom:10%">
-            </img>
-            </span>
-            <!--Dropdowns!-->
-            <div class=BBR style="display: block;" id="selector">
-            <b class="selector">Selector</b>
-            <hr>
-            <span id=Connection class=BBox2>
-                Disconnected
-            </span>
-            <hr>
-                <span class="selector">
-                   <b class="selector"> Autonomous </b> <br> <br>
-                   <select onchange="null" class="selector">
-                       <option class="selector">1 Switch 1 Scale</option>
-                       <option class="selector">2 Scale</option>
-                   </select>
-                </span>
-                <hr>
-                <span class="selector">
-                        <b class="selector">Starting Position</b> <br> <br>
-                    <select name="" id="SP" class="selector" onchange="null">
-                        <option value="" class="selector" id="left">Left</option>
-                        <option value="" class="selector" id=right>Right</option>
-                    </select>
-                </span>
-                <hr>
-                <button onclick="CloseB()" class="selector" style="margin-left:20%">Close Tab</button>
-        </div> 
+            <!--<img id="camera1" alt="Stream not found" style="background-color:white;font-size:150%;margin-bottom:10%">
+            </img>!-->
         <!--Javascript!-->
+        <span style="border:solid black;padding-left: 50%;padding-bottom:45%;margin-right: 50%;"></span>
+        <div style="border:solid black;padding: 0%;margin-left: 52%;padding-bottom: 30%;background-color:white;">
+            <span style="background-color:white;"><h1 style="background-color: white">Orientation</h1></span>
+        </div>
         <script src="mousestrap-master/moustrap.min.js"></script>
         <script src="JS/mtimer.js"></script>
         <script src="JS/timerc.js"></script>
