@@ -5,20 +5,23 @@
 </head>
 <body>
     <div style="padding: 2.5%;"><h1 style="text-align: center;">Checklist</h1></div>
-    <form>
+    <form onsubmit="window.location.href='index.html'">
         <div style="margin-left:22.5%;margin-right:22.5%;margin-top:11.5%;margin-bottom:11.5%;border: solid black;text-align: center;">
-        <input type="checkbox" name="" required> §§§ <br>
-        <input type="checkbox" name="" required> §§§ <br>
-        <input type="checkbox" name="" required> §§§ <br>
-        <input type="checkbox" name="" required> §§§ <br>
-        <input type="checkbox" name="" required> §§§ <br>
-        <input type="submit" name="" onclick="window.location.href='index.html'"><br>
+        <input type="checkbox" name="CHECKBOX1" required> §§§ <br>
+        <input type="checkbox" name="CHECKBOX4" required> §§§ <br>
+        <input type="checkbox" name="CHECKBOX3" required> §§§ <br>
+        <input type="checkbox" name="CHECKBOX2" required> §§§ <br>
+        <input type="submit" name=""><br>
         </div>
     </form>
     <div style="padding: 5%;"></div>
     <script type="text/javascript">
-        function LR(){
-            location.replace("index.html")
+        function Checkbox(theForm)
+        {
+            if(theForm.CHECKBOX1.checked == false &&
+                theForm.CHECKBOX1.checked == false &&
+                theForm.CHECKBOX1.checked == false &&
+                theForm.CHECKBOX1.checked == false)
         }
     </script>
 </body>
