@@ -4,9 +4,6 @@
 }
 .TB{
     border:solid black;
-    padding:1%;
-    padding-top: 3%;
-    padding-bottom: 3%;
     background-color: rgb(88, 88, 88);
 }
 .TBR{
@@ -98,4 +95,41 @@
     margin-left: 52%;
     padding-bottom: 30%;
     background-color:white;
+}
+.TBR2{
+    border:solid black;
+    padding:1.5%;
+    padding-top: 2%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    background-color: rgb(255, 255, 255);
+    margin-left: 65%}
+.Timer{
+    border:solid black;
+    background-color:white;
+    font-size: 750%
+}
+.TBR2{
+    border:solid black;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    background-color: rgb(255, 255, 255);
+    float:right;
+}
+.initialhide{
+    display: none;
+}
+.checklist{
+    background-color:white;
+    font-size:400%;
+}
+input[type=checkbox]{
+    zoom:250%;
+}
+input[type=submit]{
+    zoom:250%;
 }
