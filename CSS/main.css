@@ -1,0 +1,94 @@
+*{
+    background-color: rgb(88, 88, 88);
+    font-family: "Arial"; 
+}
+.TB{
+    border:solid black;
+    padding:1%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    background-color: rgb(88, 88, 88);
+}
+.TBR{
+    border:solid black;
+    padding:1.5%;
+    padding-top: 2%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    background-color: rgb(255, 255, 255);
+}
+.BR{
+    border:solid black;
+    margin-top:0.2%;
+    padding-bottom:3.5%;
+    background-color:rgb(88, 88, 88);
+}
+.Camera{
+    padding-bottom:0%;
+    padding-left:0%;
+    padding-right:0%;
+    margin-right:50%;
+    border:null;
+    background-color:white;
+}
+.BBR{
+    border:solid black;
+    padding-top:0.1%;
+    padding-bottom:0.1%; 
+    margin-left:89%;
+    background-color:white;   
+}
+.BBox{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.1%;
+    padding-bottom:0.1%; 
+    background-color:white;   
+}
+.BBox2{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.1%;
+    padding-bottom:0.1%; 
+    background-color:white;
+    color: red   
+}
+.BTBox{
+    border:solid black;
+    padding-top:0.1%;
+    margin:0.5%;
+    padding-bottom:0.1%; 
+    background-color:white;
+    font-size:75%;
+}
+.Scale{
+    width:6%;
+    height:6%;
+    background-color:white;
+}
+.Cube{
+    width:4%;
+    height:4%;
+    background-color:white;
+}
+.Arrows{
+    width:5%;
+    height:4%;
+    background-color:white;
+}
+.DArrow{
+    width:3%;
+    height:0.5%;
+    background-color:white;
+}
+.selector{
+    background-color:white;
+}
+.Topbar{
+    margin-left:1%;
+    padding-top:2.5%}
+.LiftB{
+    background-color:white;
+    color: lime;
+}

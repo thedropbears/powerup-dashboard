@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <link id=Setting>
+    <span id=Theme></span>
+    <link href="CSS/main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
+    <header>
+        <title style="background-color:black;">
+            4774-Dashboard
+        </title>
+    </header>
+    <body>
+        <!--Top Bar!-->
+        <div class="TB">
+            </span>
+            <span class="TBR">
+                <span id=MTimer class="BBox">
+                    135
+                </span>
+                <span id=CTimer class="BTBox">
+                    15
+                </span>
+            </span>
+            <span style="background-color: white">
+                <select style="background-color: white" id=auto-select>
+                </select>
+            </span>
+            <span class="TBR" id=Orientation style="margin-left: 65%">
+                <span class="selector">
+                <span class="selector" id="Low">
+                    Low
+                </span>
+                <span class="selector" id=Mid>
+                    Mid
+                </span>
+                <span class="selector" id=Top>
+                    Top
+                </span>
+            </span>
+            </span>
+        <!--TopBar!-->
+        </div>
+        <!--Bottom Sector!-->
+            <!--<img id="camera1" alt="Stream not found" style="background-color:white;font-size:150%;margin-bottom:10%">
+            </img>!-->
+        <!--Javascript!-->
+        <div>
+        <span style="border:solid black;padding-left: 20%;padding-bottom:45%;margin-right: 50%;padding-right:20%;background-color:white;">
+            <img id=camera1 alt="Stream not found" style="background-color: white">
+        </span>
+        <div class="checklist-div">
+        <b>
+            <h1></h1>Checklist:</h1>
+            <form id="checklist" onsubmit="return false">
+                <input type="checkbox" required checked> Is robot connected?
+                <br>
+                <input type="checkbox" required checked> Select Auto
+                <br>
+                <input type="checkbox" required checked> Is cube loaded?
+                <br>
+                <input type="checkbox" required checked> Is controller connected?
+                <br>
+                <input type="checkbox" required checked> Is robot connected?
+                <br>
+                <input type="submit">
+
+            </form>
+
+        </b>
+    </div>
+        <div style="border:solid black;padding: 0%;margin-left: 52%;padding-bottom: 30%;background-color:white;">
+            <span style="background-color:white;">
+                <h1 style="background-color: white">
+                    Orientation
+                </h1>
+            </span>
+        </div>
+        </div>
+        <script src="mousestrap-master/moustrap.min.js"></script>
+        <script src="JS/mtimer.js"></script>
+        <script src="JS/timerc.js"></script>
+        <script src="JS/jquery-3.3.1.min.js"></script>
+        <script>
+            $(document).ready(function(Timer){
+                setInterval(function(){
+                        $("#MTimer").empty();
+                        $("#MTimer").append(timer);
+                    },500)})
+
+        	$(document).ready(function(CTimer){
+                setInterval(function(){
+                        $("#CTimer").empty();
+                        $("#CTimer").append(Ctimer);
+                    },500)})
+        </script>
+        <script type="text/javascript">
+            function remove_form() {
+                $(".checklist-div").hide()
+                $(".inital-hide").show()}
+        </script>
+    </body>
+</html>
