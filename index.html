@@ -12,19 +12,6 @@
     <body>
         <!--Top Bar!-->
         <div class="TB">
-            <span class="TBR">
-                <span class="selector">
-                    <img src="Images/noscale.png" class=Scale id=Scale>
-                </span>
-                <span class="selector">
-                    <img src="Images/cube.png" class=Cube id=Cube>
-                </span>
-                <span class="selector">
-                    <img src="Images/up.png" class=Arrows id=Arrows>
-                </span>
-                <span class="selector">
-                    <img src="Images/down.png" class=DArrow id=Darrows>
-                </span>
             </span>
             <span class="TBR">
                 <span id=MTimer class="BBox">
@@ -34,65 +21,66 @@
                     15
                 </span>
             </span>
-            <span class="TBR" id=Direction>
-                Direction
+            <span style="background-color: white">
+                <select style="background-color: white" id=auto-select>
+                </select>
             </span>
-            <span class="TBR" id=Orientation>
-                Orientation
+            <span class="TBR" id=Orientation style="margin-left: 65%">
+                <span class="selector">
+                <span class="selector" id="Low">
+                    Low
+                </span>
+                <span class="selector" id=Mid>
+                    Mid
+                </span>
+                <span class="selector" id=Top>
+                    Top
+                </span>
             </span>
-            <button></button>
+            </span>
         <!--TopBar!-->
         </div>
         <!--Bottom Sector!-->
-        <div class=BR>
-            <!--Camera!-->
-            <span class=Camera>
-            <img id="camera1" alt="Stream not found" style="background-color:white;font-size:150%;margin-bottom:10%">
-            </img>
-            </span>
-            <!--Dropdowns!-->
-            <div class=BBR style="display: block;" id="selector">
-            <b class="selector">Selector</b>
-            <hr>
-            <span id=Connection class=BBox2>
-                Disconnected
-            </span>
-            <hr>
-                <span class="selector">
-                   <b class="selector"> Autonomous </b> <br> <br>
-                </span>
-                <hr>
-                <span class="selector">
-                        <b class="selector">Starting Position</b> <br> <br>
-                    <select name="" id="SP" class="selector" onchange="null">
-                        <option value="" class="selector" id="left">Left</option>
-                        <option value="" class="selector" id=right>Right</option>
-                    </select>
-                </span>
-                <hr>
-                <button onclick="CloseB()" class="selector" style="margin-left:20%">Close Tab</button>
-        </div> 
+            <!--<img id="camera1" alt="Stream not found" style="background-color:white;font-size:150%;margin-bottom:10%">
+            </img>!-->
         <!--Javascript!-->
-        <script src="mousestrap-master/moustrap.min.js"></script>
-        <script src="JS/mtimer.js"></script>
-        <script src="JS/timerc.js"></script>
-        <script src="JS/jquery-3.3.1.min.js"></script>
-        <script>
-            $(document).ready(function(Timer){
-                setInterval(function(){
-                        $("#MTimer").empty();
-                        $("#MTimer").append(timer);
-                    },500)})
+        <div>
+        <span class=Camera>
+            <img id=camera1 alt="Stream not found" style="background-color: white">
+        </span>
+        <div class="checklist-div">
+    </div>
 
-        	$(document).ready(function(CTimer){
-                setInterval(function(){
-                        $("#CTimer").empty();
-                        $("#CTimer").append(Ctimer);
-                    },500)})
-        </script>
-        <script type="text/javascript">
-            function CloseB(){
-            document.getElementById('selector').style.display = "none";}
+        <div class=orientation>
+            <span class="selector">
+                <h1 class=selector>
+                    Orientation
+                </h1>
+            </span>
+        </div>
+
+        <b>
+            <h2>Checklist:</h2>
+            <form id="checklist" onsubmit="return false" class="selector">
+                <input type="checkbox" required> Is robot connected?
+                <br>
+                <input type="checkbox" required> Select Auto
+                <br>
+                <input type="checkbox" required> Is cube loaded?
+                <br>
+                <input type="checkbox" required> Is controller connected?
+                <br>
+                <input type="checkbox" required> Is robot connected?
+                <br>
+                <input type="submit" class="selector">
+            </form>
+        </b>
+
+        </div>
+        <script src="JS/timerc.js" src="Jquery.js" src="JS/jquery-3.3.1.min.js" src="JS/mtimer.js">
+            function remove_form() {
+                $(".checklist-div").hide()
+                $(".inital-hide").show()}
         </script>
     </body>
 </html>

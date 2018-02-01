@@ -12,7 +12,7 @@
 .TBR{
     border:solid black;
     padding:1.5%;
-    padding-top: 3%;
+    padding-top: 2%;
     margin-left:0.25%;
     margin-right:0.25%;
     font-size:210%;
@@ -25,11 +25,11 @@
     background-color:rgb(88, 88, 88);
 }
 .Camera{
-    padding-bottom:0%;
-    padding-left:0%;
-    padding-right:0%;
-    margin-right:0.8%;
-    border:null;
+    border:solid black;
+    padding-left: 20%;
+    padding-bottom:40%;
+    margin-right: 50%;
+    padding-right:20%;
     background-color:white;
 }
 .BBR{
@@ -87,4 +87,15 @@
 }
 .Topbar{
     margin-left:1%;
-    padding-top:2.5%
+    padding-top:2.5%}
+.LiftB{
+    background-color:white;
+    color: lime;
+}
+.orientation{
+    border:solid black;
+    padding: 0%;
+    margin-left: 52%;
+    padding-bottom: 30%;
+    background-color:white;
+}
