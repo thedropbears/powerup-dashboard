@@ -1,19 +1,18 @@
 *{
-    background-color: rgb(88, 88, 88);
-    font-family: "Arial"; 
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto",sans-serif;
+    color: rgb(223, 48, 48);
 }
 .TB{
-    border:solid black;
-    background-color: rgb(88, 88, 88);
+    border:solid white;
     height: 12vw;
 }
 .camera{
-    border:solid black;
+    border:solid white;
     padding-left: 20%;
     padding-bottom:40%;
     margin-right: 50%;
     padding-right:20%;
-    background-color:white;
     display: inline;
     width: 50vw;
 }
@@ -22,15 +21,12 @@
     padding: 0%;
     margin-left: 52%;
     padding-bottom: 30%;
-    background-color:white;
     width: 50vw;
     display: inline;
     float: right;
 }
 #timer{
-    border:solid black;
-    background-color:white;
-    font-size: 12vw;
+    font-size: 10vw;
     width: 20vw;
     height: 12vw;
     margin: auto;
@@ -38,31 +34,30 @@
     vertical-align: top;
 }
 .TBR2{
-    border:solid black;
+    border:solid white;
     padding-top: 3.5%;
     padding-bottom: 3.5%;
     margin-left:0.25%;
     margin-right:0.25%;
     font-size:210%;
-    background-color: rgb(255, 255, 255);
     float:right;
 }
 .hidden{
     display: none;
 }
 .checklist{
-    background-color:white;
     font-size:3vw;
+    border:solid white;
 }
 input[type=checkbox]{
     zoom:250%;
 }
 input[type=submit]{
     zoom:250%;
+    margin-left: 2.5%;
+    margin-bottom:1%;
 }
-legend{
-    background-color: white;
-}
+legend{}
 #auto-select{
     background-color:white;
     display: inline;
@@ -73,8 +68,10 @@ legend{
     display: inline;
 }
 .lift-status{
-    border:solid black;
     font-size:6vw;
-    background-color: rgb(255, 255, 255);
     float:right;
+}
+.hline{
+    line-height: 100%;
+    border:solid white;
 }
