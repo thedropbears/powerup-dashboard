@@ -10,7 +10,7 @@ function timer_app(){
     //TODO receive start signal through network tables
     
     //console.log('\033c');
-    if (timer <= 0){
+    if (timer <= 1){
         //console.log("END GAME");
         //document.getElementById("MTimer").textContent=timer;
         timer = timer--
@@ -34,7 +34,6 @@ function timer_app(){
         text = document.createTextNode(timer);
         span.appendChild(text)
     }
-    
 }
 
 // countdown timer
