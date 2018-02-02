@@ -33,14 +33,6 @@ function onNetworkTablesConnection(connected) {
     }
 }
 
-function onRobotConnection(connected){
-       if (connected) {
-
-    } else {
-
-    } 
-}
-
 function onValueChanged(key, value, isNew) {
     switch (key) {
         case "/SmartDashboard/gyro":
@@ -70,6 +62,27 @@ function rotateCompass(heading) {
     
 }
 
+function onRobotConnection(connected) {
+    if (connected) {
+        $("#connection").text("Connected");
+        $("#connection").css({
+            "color": "#4CAF50"
+        });
+    } else {
+        $("#connection").text("Disconnected");
+        $("#connection").css({
+            "color": "rgb(223, 48, 48)"
+        });
+
+    }
+}
+
+function remove_form() {
+    $(".checklist").hide()
+    $(".hidden").show()
+    $(".hiddengyro").show()
+}
+
 function timerCycle() {
     var countDownDate = Math.floor(Date.now() / 1000) + 135;
     var x = setInterval(function () {
@@ -92,6 +105,14 @@ function timerCycle() {
             document.getElementById("timer").innerHTML = difference;
         }
     }, 1000);
+}
+
+function rotateCompass(heading) {
+    heading = heading - offsetGyro;
+    heading = Math.PI - heading; // gyro is the wrong way around
+    var robot = document.getElementById("compass");
+    robot.style.transform = "rotate(" + heading + "rad)";
+
 }
 
 /* --CYCLE TIMER--

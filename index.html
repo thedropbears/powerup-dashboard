@@ -28,9 +28,9 @@
             <!-- Lifter position -->
             <div class="lift-status">
                 <div class="lift-status" id="l1">Switch</div>
-                <div class="hidden" id="l2">Lower Scale</div>
-                <div class="hidden" id="l3">Balanced Scale</div>
-                <div class="hidden" id="l4">Upper Scale</div>
+                <div class="hidden-status" id="l2">Lower Scale</div>
+                <div class="hidden-status" id="l3">Balanced Scale</div>
+                <div class="hidden-status" id="l4">Upper Scale</div>
                 <div class="lift-status">Lifter: </div>
             </div>
 
@@ -40,19 +40,19 @@
         <div>
             <!-- Camera stream -->
             <div class="hidden">
-                <img id="camera" alt="Stream not found" class="selector">
+                <img id="camera" alt="Stream not found">
             </div>
 
             <!-- Orientation -->
             <div class="hidden">
                 <span class="selector">
-                    <h1 class=selector id=gyro>Orientation</h1>
+                    <img src=robotred.png class="hiddengyro">
                 </span>
             </div>
 
             <!-- Checklist -->
             <div>
-                <form onsubmit="return false" class="checklist">
+                <form onsubmit="remove_form();return false" class="checklist">
                     <legend>Checklist: </legend>
                     <input type="checkbox" required> Is robot connected?<br>
                     <input type="checkbox" required> Select Auto<br>

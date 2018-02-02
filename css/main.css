@@ -45,6 +45,20 @@
 .hidden{
     display: none;
 }
+.hiddengyro{
+    display: none;
+    width: 50%;
+    height: 50%;
+    float:right;
+    margin-top:10%;
+    margin-right:10%;
+}
+.hidden-status{
+    display: none;
+}
+.selector{
+    float: right;
+}
 .checklist{
     font-size:3vw;
     border:solid white;
