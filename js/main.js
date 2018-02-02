@@ -1,31 +1,28 @@
-var timer = 135;
-var delayInMilliseconds = 1000;
-var refresh = setInterval(timer_app, delayInMilliseconds);
+function timerCycle() {
+    var countDownDate = Math.floor(Date.now() / 1000) + 135;
+    var x = setInterval(function () {
+        var now = Math.floor(Date.now() / 1000);
+        var difference = countDownDate - now;
+        console.log("K");
 
-function timer_app(){
-    console.log('\033c');
-    if (timer <= 0){
-        console.log("END GAME");
-        clearInterval(refresh);
-    }
-    if (timer <= 119){
-        timer = timer - 1;
-    }
-    if (timer >= 120){
-        timer = timer - 1;
-    }
+        if (difference <= 0) {
+            document.getElementById("cycleTimer").innerHTML = "";
+            $("#timer").text("GOOD JOB!");
+            $("#timer").css("font-size", "425%")
+            $("#timer").css("color", "#4CAF50")
+            $("#timer").toggleClass("blink");
+        }
+        else if (difference < 10) {
+            document.getElementById("timer").innerHTML = "00" + difference;
+        } else if (difference < 100) {
+            document.getElementById("timer").innerHTML = "0" + difference;
+        }
+        else {
+            document.getElementById("timer").innerHTML = difference;
+        }
+    }, 1000);
 }
-$(document).ready(function(Timer){
-                setInterval(function(){
-                        $("#MTimer").empty();
-                        $("#MTimer").append(timer);
-                    },500)})
 
-            $(document).ready(function(CTimer){
-                setInterval(function(){
-                        $("#CTimer").empty();
-                        $("#CTimer").append(Ctimer);
-                    },500)})
 /* --CYCLE TIMER--
 var Ctimer = 15;
 var CdelayInMilliseconds = 1000;

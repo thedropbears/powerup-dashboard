@@ -25,7 +25,7 @@
     display: inline;
     float: right;
 }
-#timer{
+.timer{
     font-size: 10vw;
     width: 20vw;
     height: 12vw;
