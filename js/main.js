@@ -47,9 +47,17 @@ function onValueChanged(key, value, isNew) {
             rotateCompass(value + Math.PI);
             currentGyro = value;
             break;
-        case "/SmartDashboard/default_height"{
+        case "/SmartDashboard/default_height":{
             
         }
+        case "/robot/mode":
+            if (value === "teleop") {
+                    timerCycle();
+            }
+            if (value != "disabled") {
+
+            }
+            break;
     }
 }
 
@@ -63,14 +71,13 @@ function rotateCompass(heading) {
 }
 
 function timerCycle() {
-    var countDownDate = Math.floor(Date.now() / 1000) + 135;
+    var countDownDate = Math.floor(Date.now() / 1000) + 5;
     var x = setInterval(function () {
         var now = Math.floor(Date.now() / 1000);
         var difference = countDownDate - now;
-        console.log("K");
 
         if (difference <= 0) {
-            document.getElementById("cycleTimer").innerHTML = "";
+            document.getElementById("timer").innerHTML = "";
             $("#timer").text("GOOD JOB!");
             $("#timer").css("font-size", "425%")
             $("#timer").css("color", "#4CAF50")
