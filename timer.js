@@ -13,7 +13,7 @@ function timer_app(){
     if (timer <= 1){
         //console.log("END GAME");
         //document.getElementById("MTimer").textContent=timer;
-        timer = timer--
+        timer = timer--;
         text = document.createTextNode(timer);
         span.appendChild(text);
         clearInterval(refresh);
@@ -22,7 +22,7 @@ function timer_app(){
     if (timer <= 119){
           //console.log(timer--);
         //document.getElementById("MTimer").textContent=timer;
-        timer = timer--
+        timer = timer--;
         text = document.createTextNode(timer);
         span.appendChild(text);
     }
@@ -30,9 +30,9 @@ function timer_app(){
         //console.log(timer-- + " AUTONOMOUS");
         //console.log(timer--);
         //document.getElementById("MTimer").textContent=timer;
-        timer = timer--
+        timer = timer--;
         text = document.createTextNode(timer);
-        span.appendChild(text)
+        span.appendChild(text);
     }
 }
 
