@@ -14,7 +14,7 @@ $(document).ready(function () {
     NetworkTables.addGlobalListener(onValueChanged, true);
 
     // hook up our SendableChoosers to combo boxes
-    attachSelectToSendableChooser("#selector", "/SmartDashboard/Autonomous Mode");
+    attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
 });
 
 function resetGyro() {
