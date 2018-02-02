@@ -20,10 +20,12 @@
             <h1 id="timer" class="timer">135</h1>
 
             <!-- Auto selector -->
-            <select id=auto-select></select>
+            <select id=auto-select class=Selector></select>
 
             <!-- Connection status -->
-            <h1 id="connection">Disconnected</h1>
+            <div style="display: inline-block">
+                    <h1 id=connection>Disconnected</h1> 
+            </div>
 
             <!-- Lifter position -->
             <div class="lift-status">
@@ -35,34 +37,28 @@
             </div>
 
         </div>
-        
-        <!-- Bottom div -->
-        <div>
+        <hr class="border">
             <!-- Camera stream -->
-            <div class="hidden">
-                <img id="camera" alt="Stream not found">
-            </div>
-
+            <span class="hidden">
+                <img id="camera" alt="Stream not found" class="inline">
+            </span>
             <!-- Orientation -->
-            <div class="hidden">
-                <span class="selector">
-                    <img src=robotred.png class="hiddengyro">
-                </span>
-            </div>
+            <span class="hiddengyro">
+                <img src=robotred.png id="compass">
+            </span>
 
             <!-- Checklist -->
             <div>
                 <form onsubmit="remove_form();return false" class="checklist">
                     <legend>Checklist: </legend>
-                    <input type="checkbox" required> Is robot connected?<br>
-                    <input type="checkbox" required> Select Auto<br>
-                    <input type="checkbox" required> Is cube loaded?<br>
-                    <input type="checkbox" required> Is controller connected?<br>
-                    <input type="checkbox" required> Is robot connected?<br>
+                    <input type="checkbox" required checked> Is robot connected?<br>
+                    <input type="checkbox" required checked> Select Auto<br>
+                    <input type="checkbox" required checked> Is cube loaded?<br>
+                    <input type="checkbox" required checked> Is controller connected?<br>
+                    <input type="checkbox" required checked> Is robot connected?<br>
                     <input type="submit" class="submit">
                 </form>
             </div>
-        </div>
 
     </body>
 </html>

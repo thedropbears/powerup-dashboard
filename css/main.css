@@ -4,15 +4,9 @@
     color: rgb(223, 48, 48);
 }
 .TB{
-    border:solid white;
     height: 12vw;
 }
-.camera{
-    border:solid white;
-    padding-left: 20%;
-    padding-bottom:40%;
-    margin-right: 50%;
-    padding-right:20%;
+#camera{
     display: inline;
     width: 50vw;
 }
@@ -22,7 +16,6 @@
     margin-left: 52%;
     padding-bottom: 30%;
     width: 50vw;
-    display: inline;
     float: right;
 }
 .timer{
@@ -46,12 +39,13 @@
     display: none;
 }
 .hiddengyro{
-    display: none;
-    width: 50%;
-    height: 50%;
-    float:right;
-    margin-top:10%;
-    margin-right:10%;
+    display: inline;
+    margin-right: 11vw;
+    width: 28vw;
+    height: 47.34vw;
+    float: right;
+    padding-left: 11vw;
+    border-left: 4px solid white;
 }
 .hidden-status{
     display: none;
@@ -61,7 +55,7 @@
 }
 .checklist{
     font-size:3vw;
-    border:solid white;
+    
 }
 input[type=checkbox]{
     zoom:250%;
@@ -81,11 +75,31 @@ legend{}
     width: 10vw;
     display: inline;
 }
+span{
+    vertical-align: middle;
+}
 .lift-status{
     font-size:6vw;
     float:right;
+    margin-top: 1.1vw;
 }
 .hline{
-    line-height: 100%;
+    height: 120%;
     border:solid white;
+    display: inline;
+}
+.border{
+    border:solid white;
+}
+.inline{
+    display: inline;
+}
+#compass{
+    margin-top: 7vw;
+    width: 28vw;
+    height: auto;
+}
+.Selector{
+    margin:5%;
+    margin-bottom: 0%;
 }
