@@ -5,6 +5,7 @@
 .TB{
     border:solid black;
     background-color: rgb(88, 88, 88);
+    height: 12vw;
 }
 .TBR{
     border:solid black;
@@ -21,13 +22,15 @@
     padding-bottom:3.5%;
     background-color:rgb(88, 88, 88);
 }
-.Camera{
+.camera{
     border:solid black;
     padding-left: 20%;
     padding-bottom:40%;
     margin-right: 50%;
     padding-right:20%;
     background-color:white;
+    display: inline;
+    width: 50vw;
 }
 .BBR{
     border:solid black;
@@ -79,9 +82,6 @@
     height:0.5%;
     background-color:white;
 }
-.selector{
-    background-color:white;
-}
 .Topbar{
     margin-left:1%;
     padding-top:2.5%}
@@ -95,6 +95,9 @@
     margin-left: 52%;
     padding-bottom: 30%;
     background-color:white;
+    width: 50vw;
+    display: inline;
+    float: right;
 }
 .TBR2{
     border:solid black;
@@ -105,10 +108,15 @@
     font-size:210%;
     background-color: rgb(255, 255, 255);
     margin-left: 65%}
-.Timer{
+#timer{
     border:solid black;
     background-color:white;
-    font-size: 750%
+    font-size: 12vw;
+    width: 20vw;
+    height: 12vw;
+    margin: auto;
+    display: inline;
+    vertical-align: top;
 }
 .TBR2{
     border:solid black;
@@ -120,12 +128,12 @@
     background-color: rgb(255, 255, 255);
     float:right;
 }
-.initialhide{
+.hidden{
     display: none;
 }
 .checklist{
     background-color:white;
-    font-size:400%;
+    font-size:3vw;
 }
 input[type=checkbox]{
     zoom:250%;
@@ -133,3 +141,22 @@ input[type=checkbox]{
 input[type=submit]{
     zoom:250%;
 }
+legend{
+    background-color: white;
+}
+#auto-select{
+    background-color:white;
+    display: inline;
+    width: fit-content;
+}
+#connection{
+    width: 10vw;
+    display: inline;
+}
+.lift-status{
+    border:solid black;
+    font-size:6vw;
+    background-color: rgb(255, 255, 255);
+    float:right;
+}
+

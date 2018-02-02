@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title class="selector">4774-Dashboard</title>
-        <link href="CSS/main.css" rel="stylesheet" type="text/css">
-        <link rel="icon" href="Images/favicon.jpg" type="image/x-icon">
-        <script src="JS/main.js"></script>
+        <title>4774-Dashboard</title>
+        <link href="css/main.css" rel="stylesheet" type="text/css">
+        <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+        <script src="js/main.js"></script>
     </head>
 
     <body>
-        <!--Top Bar!-->
-        <div class="TB">
-            <span id=MTimer class="Timer">
-                135
-            </span>
-            <span class=selector>
-                <select class=selector id=auto-select>
-                </select>
-            </span>
-            <span class="TBR2" id=Orientation>
-                <span class="selector">
-                <span class="selector" id="l1">
-                    Switch
-                </span>
-                <span class="selector" id=l2>
-                    Lower Scale
-                </span>
-                <span class="selector" id=l3>
-                    Balanced Scale
-                </span>
-                <span class="selector" id=l4>
-                    Upper Scale
-                </span>
-            </span>
-            </span>
-        <!--TopBar!-->
-        </div>
-        <!--Bottom Sector!-->
-        <div class="initialhide">
-        <span class=Camera>
-            <img id=camera1 alt="Stream not found" class=selector>
-        </span>
-        <div class="checklist-div">
-    </div>
 
-        <div class=orientation>
-            <span class="selector">
-                <h1 class=selector id=gyro>
-                    Orientation
-                </h1>
-            </span>
+        <!-- Top Bar -->
+        <div class="TB">
+
+            <!-- Timer -->
+            <h1 id="timer">135</h1>
+
+            <!-- Auto selector -->
+            <select id=auto-select></select>
+
+            <!-- Connection status -->
+            <h1 id="connection">Disconnected</h1>
+
+            <!-- Lifter position -->
+            <div class="lift-status">
+                <div class="lift-status" id="l1">Switch</div>
+                <div class="hidden" id="l2">Lower Scale</div>
+                <div class="hidden" id="l3">Balanced Scale</div>
+                <div class="hidden" id="l4">Upper Scale</div>
+                <div class="lift-status">Lifter: </div>
+            </div>
+
         </div>
-        </div>
+        
+        <!-- Bottom div -->
         <div>
-            <form id="checklist" onsubmit="return false" class="checklist">
-                Checklist: <hr>
-                <input type="checkbox" required class="checkbox"> Is robot connected?
-                <br>
-                <input type="checkbox" required> Select Auto
-                <br>
-                <input type="checkbox" required> Is cube loaded?
-                <br>
-                <input type="checkbox" required> Is controller connected?
-                <br>
-                <input type="checkbox" required> Is robot connected?
-                <br>
-                <input type="submit" class="selector">
-            </form>
+            <!-- Camera stream -->
+            <div class="hidden">
+                <img id="camera" alt="Stream not found" class="selector">
+            </div>
+
+            <!-- Orientation -->
+            <div class="hidden">
+                <span class="selector">
+                    <h1 class=selector id=gyro>Orientation</h1>
+                </span>
+            </div>
+
+            <!-- Checklist -->
+            <div>
+                <form onsubmit="return false" class="checklist">
+                    <legend>Checklist</legend>
+                    <input type="checkbox" required> Is robot connected?<br>
+                    <input type="checkbox" required> Select Auto<br>
+                    <input type="checkbox" required> Is cube loaded?<br>
+                    <input type="checkbox" required> Is controller connected?<br>
+                    <input type="checkbox" required> Is robot connected?<br>
+                    <input type="submit" class="submit">
+                </form>
+            </div>
         </div>
+
     </body>
 </html>
