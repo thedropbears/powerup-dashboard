@@ -7,7 +7,7 @@ $(document).ready(function () {
     NetworkTables.addWsConnectionListener(onNetworkTablesConnection, true);
 
     // sets a function that will be called  when the robot connects/disconnects
-    NetworkTables.addRobotConnectionListener(onRobotConnection, true);
+    // NetworkTables.addRobo tConnectionListener(onRobotConnection, true);
 
 
     // sets a function that will be called when any NetworkTables key/value changes
@@ -32,6 +32,14 @@ function onNetworkTablesConnection(connected) {
 
     }
 }
+function updateLifterStatus(id){
+    $("#l1").attr("class","hidden-status")
+    $("#l2").attr("class","hidden-status")
+    $("#l3").attr("class","hidden-status")
+    $("#l4").attr("class","hidden-status")
+    $("#l1").attr("class","hidden-status")
+    $("#"+id).attr("class","lift-status")
+}
 
 function onValueChanged(key, value, isNew) {
     switch (key) {
@@ -50,9 +58,23 @@ function onValueChanged(key, value, isNew) {
 
             }
             break;
+        case "/lifter/state":
+            if(value === "switch_height"){
+                updateLifterStatus("l1")
     }
+            else if(value === "lower_scale"){
+                updateLifterStatus("l2")
+    }
+            else if(value === "balanced_scale"){
+                updateLifterStatus("l3")
+    }
+            else if(value === "upper_scale"){
+                updateLifterStatus("l4")
+    }
+            else{
+                null
+    }   
 }
-
 
 function rotateCompass(heading) {
     heading = heading - offsetGyro;
@@ -113,7 +135,7 @@ function rotateCompass(heading) {
     var robot = document.getElementById("compass");
     robot.style.transform = "rotate(" + heading + "rad)";
 
-}
+}}
 
 /* --CYCLE TIMER--
 var Ctimer = 15;
