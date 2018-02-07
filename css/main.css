@@ -55,7 +55,7 @@
 }
 .checklist{
     font-size:3vw;
-    
+
 }
 input[type=checkbox]{
     zoom:250%;
@@ -74,14 +74,13 @@ legend{}
 #connection{
     width: 10vw;
     display: inline;
-}
+}status
 span{
     vertical-align: middle;
 }
 .lift-status{
-    font-size:6vw;
+    font-size:3vw;
     float:right;
-    margin-top: 1.1vw;
 }
 .hline{
     height: 120%;

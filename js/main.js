@@ -37,8 +37,7 @@ function updateLifterStatus(id){
     $("#l2").attr("class","hidden-status")
     $("#l3").attr("class","hidden-status")
     $("#l4").attr("class","hidden-status")
-    $("#l1").attr("class","hidden-status")
-    $("#"+id).attr("class","lift-status")
+    $("#"+id).attr("class","inline")
 }
 
 function onValueChanged(key, value, isNew) {
@@ -48,7 +47,7 @@ function onValueChanged(key, value, isNew) {
             currentGyro = value;
             break;
         case "/SmartDashboard/default_height":{
-            
+
         }
         case "/robot/mode":
             if (value === "teleop") {
@@ -73,7 +72,8 @@ function onValueChanged(key, value, isNew) {
     }
             else{
                 null
-    }   
+    }
+}
 }
 
 function rotateCompass(heading) {
@@ -81,7 +81,7 @@ function rotateCompass(heading) {
     heading = Math.PI - heading; // gyro is the wrong way around
     var robot = document.getElementById("gyro");
     robot.style.transform = "rotate(" + heading + "rad)";
-    
+
 }
 
 function onRobotConnection(connected) {
@@ -135,7 +135,7 @@ function rotateCompass(heading) {
     var robot = document.getElementById("compass");
     robot.style.transform = "rotate(" + heading + "rad)";
 
-}}
+}
 
 /* --CYCLE TIMER--
 var Ctimer = 15;
