@@ -61,14 +61,14 @@ function onValueChanged(key, value, isNew) {
         if(value === "switch_height"){
             updateLifterStatus("l1");
     }
-    else if(value === "lower_scale"){
-        updateLifterStatus("l2");
+        else if(value === "lower_scale"){
+                updateLifterStatus("l2");
     }
-    else if(value === "balanced_scale"){
-        updateLifterStatus("l3");
+        else if(value === "balanced_scale"){
+                updateLifterStatus("l3");
     }
-    else if(value === "upper_scale"){
-        updateLifterStatus("l4");
+        else if(value === "upper_scale"){
+                updateLifterStatus("l4");
     }
     else{
         null;
@@ -99,7 +99,7 @@ function remove_form() {
 
 function timerCycle() {
     var countDownDate = Math.floor(Date.now() / 1000) + 135;
-    setInterval(function () {
+    var x = setInterval(function () {
         var now = Math.floor(Date.now() / 1000);
         var difference = countDownDate - now;
 
