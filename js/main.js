@@ -14,9 +14,12 @@ $(document).ready(function() {
     NetworkTables.addGlobalListener(onValueChanged, true);
 
     // hook up our SendableChoosers to combo boxes
-    NetworkTables.attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
+    attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
 
-    document.getElementsByClassName("checklist").onsubmit = function(){remove_form(); return false}
+    $("#mainform").submit(function(e) {
+        e.preventDefault();
+	remove_form()
+    });
 
 });
 
@@ -28,7 +31,6 @@ function resetGyro() {
 
 
 function onNetworkTablesConnection(connected) {
-    // TODO
     if (connected) {
         null;
     } else {
@@ -48,11 +50,6 @@ function onValueChanged(key, value) {
     switch (key) {
         case "/SmartDashboard/gyro":
             rotateCompass(value + Math.PI);
-            break;
-        case "/SmartDashboard/default_height":
-            {
-                null;
-            }
             break;
         case "/robot/mode":
             if (value === "teleop") {
@@ -75,11 +72,6 @@ function onValueChanged(key, value) {
                 null;
             }
     }
-}
-
-function strategyUpdate() {
-    NetworkTables.putValue("SmartDashboard/start", $("#Start").val());
-    NetworkTables.putValue("SmartDashboard/strategy", $("#Strategy").val());
 }
 
 function onRobotConnection(connected) {
@@ -132,19 +124,3 @@ function rotateCompass(heading) {
     robot.style.transform = "rotate(" + heading + "rad)";
 
 }
-
-/* --CYCLE TIMER--
-var Ctimer = 15;
-var CdelayInMilliseconds = 1000;
-var Cinterval = 0;
-var Crefresh = setInterval(Ctimer_app, CdelayInMilliseconds);
-
-function Ctimer_app(){
-    console.log('\033c');
-    if (Ctimer > 0){
-        Ctimer--;
-    }
-    if (Ctimer <= 0){
-        Ctimer = 30;
-    }
-}*/
