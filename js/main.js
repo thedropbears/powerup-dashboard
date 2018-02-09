@@ -58,20 +58,20 @@ function onValueChanged(key, value, isNew) {
             }
             break;
         case "/lifter/state":
-            if(value === "switch_height"){
-                updateLifterStatus("l1")
+        if(value === "switch_height"){
+            updateLifterStatus("l1");
     }
-            else if(value === "lower_scale"){
-                updateLifterStatus("l2")
+    else if(value === "lower_scale"){
+        updateLifterStatus("l2");
     }
-            else if(value === "balanced_scale"){
-                updateLifterStatus("l3")
+    else if(value === "balanced_scale"){
+        updateLifterStatus("l3");
     }
-            else if(value === "upper_scale"){
-                updateLifterStatus("l4")
+    else if(value === "upper_scale"){
+        updateLifterStatus("l4");
     }
-            else{
-                null
+    else{
+        null;
     }
 }
 }
@@ -100,9 +100,9 @@ function onRobotConnection(connected) {
 }
 
 function remove_form() {
-    $(".checklist").hide()
-    $(".hidden").show()
-    $(".hiddengyro").show()
+    $(".checklist").hide();
+    $(".hidden").show();
+    $(".hiddengyro").show();
 }
 
 function timerCycle() {
@@ -114,8 +114,8 @@ function timerCycle() {
         if (difference <= 0) {
             document.getElementById("timer").innerHTML = "";
             $("#timer").text("GOOD JOB!");
-            $("#timer").css("font-size", "425%")
-            $("#timer").css("color", "#4CAF50")
+            $("#timer").css("font-size", "425%");
+            $("#timer").css("color", "#4CAF50");
             $("#timer").toggleClass("blink");
         }
         else if (difference < 10) {
