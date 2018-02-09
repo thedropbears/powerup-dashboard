@@ -1,7 +1,7 @@
 var currentGyro = 0
 var offsetGyro = 0
 
-$(document).ready(function () {
+$(document).ready(function() {
 
     // sets a function that will be called when the websocket connects/disconnects
     NetworkTables.addWsConnectionListener(onNetworkTablesConnection, true);
@@ -32,12 +32,13 @@ function onNetworkTablesConnection(connected) {
 
     }
 }
-function updateLifterStatus(id){
-    $("#l1").attr("class","hidden-status")
-    $("#l2").attr("class","hidden-status")
-    $("#l3").attr("class","hidden-status")
-    $("#l4").attr("class","hidden-status")
-    $("#"+id).attr("class","inline")
+
+function updateLifterStatus(id) {
+    $("#l1").attr("class", "hidden-status")
+    $("#l2").attr("class", "hidden-status")
+    $("#l3").attr("class", "hidden-status")
+    $("#l4").attr("class", "hidden-status")
+    $("#" + id).attr("class", "inline")
 }
 
 function onValueChanged(key, value, isNew) {
@@ -46,34 +47,31 @@ function onValueChanged(key, value, isNew) {
             rotateCompass(value + Math.PI);
             currentGyro = value;
             break;
-        case "/SmartDashboard/default_height":{
-
-        }
+        case "/SmartDashboard/default_height":
+            {
+                null;
+            }
         case "/robot/mode":
             if (value === "teleop") {
-                    timerCycle();
+                timerCycle();
             }
             if (value != "disabled") {
 
             }
             break;
         case "/lifter/state":
-        if(value === "switch_height"){
-            updateLifterStatus("l1");
-    }
-        else if(value === "lower_scale"){
+            if (value === "switch_height") {
+                updateLifterStatus("l1");
+            } else if (value === "lower_scale") {
                 updateLifterStatus("l2");
-    }
-        else if(value === "balanced_scale"){
+            } else if (value === "balanced_scale") {
                 updateLifterStatus("l3");
-    }
-        else if(value === "upper_scale"){
+            } else if (value === "upper_scale") {
                 updateLifterStatus("l4");
+            } else {
+                null;
+            }
     }
-    else{
-        null;
-    }
-}
 }
 
 function onRobotConnection(connected) {
@@ -99,7 +97,7 @@ function remove_form() {
 
 function timerCycle() {
     var countDownDate = Math.floor(Date.now() / 1000) + 135;
-    setInterval(function () {
+    setInterval(function() {
         var now = Math.floor(Date.now() / 1000);
         var difference = countDownDate - now;
 
@@ -109,13 +107,11 @@ function timerCycle() {
             $("#timer").css("font-size", "425%");
             $("#timer").css("color", "#4CAF50");
             $("#timer").toggleClass("blink");
-        }
-        else if (difference < 10) {
+        } else if (difference < 10) {
             document.getElementById("timer").innerHTML = "00" + difference;
         } else if (difference < 100) {
             document.getElementById("timer").innerHTML = "0" + difference;
-        }
-        else {
+        } else {
             document.getElementById("timer").innerHTML = difference;
         }
     }, 1000);

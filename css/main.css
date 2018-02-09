@@ -78,6 +78,10 @@ legend{}
 span{
     vertical-align: middle;
 }
+.lifter{
+    font-size: 3vw;
+    display: inline;
+}
 .lift-status{
     font-size:3vw;
     float:right;
