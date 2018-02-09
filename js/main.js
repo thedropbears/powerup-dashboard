@@ -20,16 +20,16 @@ $(document).ready(function() {
 function resetGyro() {
 
     offsetGyro = currentGyro;
-    rotateCompass(currentGyro + Math.PI)
+    rotateCompass(currentGyro + Math.PI);
 }
 
 
 function onNetworkTablesConnection(connected) {
     // TODO
     if (connected) {
-
+        null;
     } else {
-
+        null;
     }
 }
 
@@ -51,12 +51,13 @@ function onValueChanged(key, value, isNew) {
             {
                 null;
             }
+            break;
         case "/robot/mode":
             if (value === "teleop") {
                 timerCycle();
             }
             if (value != "disabled") {
-
+                null;
             }
             break;
         case "/lifter/state":
