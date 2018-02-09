@@ -14,7 +14,7 @@ rules:
     - error
     - 4
     - SwitchCase: 1
-  no-console: 'off'
+  no-console: off
   semi:
     - warn
     - always
