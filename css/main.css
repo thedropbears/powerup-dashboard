@@ -1,0 +1,116 @@
+*{
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto",sans-serif;
+    color: rgb(223, 48, 48);
+}
+.TB{
+    height: 12vw;
+}
+#camera{
+    display: inline;
+}
+.orientation{
+    border:solid black;
+    padding: 0%;
+    margin-left: 52%;
+    padding-bottom: 30%;
+    width: 50vw;
+    float: right;
+}
+.timer{
+    font-size: 10vw;
+    width: 20vw;
+    height: 12vw;
+    margin: auto;
+    display: inline;
+    vertical-align: top;
+}
+.TBR2{
+    border:solid white;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    float:right;
+}
+.hidden{
+    display: none;
+}
+.hiddengyro{
+    display: inline;
+    margin-right: 1.5vw;
+    width: 28vw;
+    height: auto;
+    float: right;
+    padding-left: 11vw;
+    border-left: 4px solid white;
+}
+.hidden-status{
+    display: none;
+}
+.selector{
+    float: right;
+}
+.checklist{
+    font-size:3vw;
+
+}
+input[type=checkbox]{
+    zoom:250%;
+}
+input[type=submit]{
+    zoom:250%;
+    margin-left: 2.5%;
+    margin-bottom:1%;
+}
+legend{}
+#auto-select{
+    background-color:white;
+    display: inline;
+    width: fit-content;
+}
+#connection{
+    width: 10vw;
+    display: inline;
+}status
+span{
+    vertical-align: middle;
+}
+.lifter{
+    font-size: 3vw;
+    display: inline;
+}
+.lift-status{
+    font-size:3vw;
+    float:right;
+}
+.lift-status2{
+    font-size:3vw;
+    margin-top:4%;
+    float:right;
+}
+.hline{
+    height: 120%;
+    border:solid white;
+    display: inline;
+}
+.border{
+    border:solid white;
+}
+.inline{
+    display: inline;
+}
+#compass{
+    margin-top: 4vw;
+    width: 16vw;
+    height: auto;
+}
+.Selector{
+    margin:5%;
+    margin-bottom: 0%;
+}
+.background{
+    background-color: white;
+    color: black;
+}
