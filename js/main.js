@@ -18,7 +18,7 @@ $(document).ready(function() {
 
     $("#mainform").submit(function(e) {
         e.preventDefault();
-	remove_form()
+	remove_form();
     });
 
 });
