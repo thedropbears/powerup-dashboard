@@ -7,7 +7,7 @@ $(document).ready(function() {
     NetworkTables.addWsConnectionListener(onNetworkTablesConnection, true);
 
     // sets a function that will be called  when the robot connects/disconnects
-    NetworkTables.addRobotConnectionListener(onRobotConnection, true);
+    NetworkTables.addRoboConnectionListener(onRobotConnection, true);
 
 
     // sets a function that will be called when any NetworkTables key/value changes
