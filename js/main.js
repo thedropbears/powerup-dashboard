@@ -99,7 +99,7 @@ function remove_form() {
 
 function timerCycle() {
     var countDownDate = Math.floor(Date.now() / 1000) + 135;
-    var x = setInterval(function () {
+    setInterval(function () {
         var now = Math.floor(Date.now() / 1000);
         var difference = countDownDate - now;
 
