@@ -7,14 +7,17 @@ $(document).ready(function() {
     NetworkTables.addWsConnectionListener(onNetworkTablesConnection, true);
 
     // sets a function that will be called  when the robot connects/disconnects
-    NetworkTables.addRoboConnectionListener(onRobotConnection, true);
+    NetworkTables.addRobotConnectionListener(onRobotConnection, true);
 
 
     // sets a function that will be called when any NetworkTables key/value changes
     NetworkTables.addGlobalListener(onValueChanged, true);
 
     // hook up our SendableChoosers to combo boxes
-    attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
+    NetworkTables.attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
+
+    document.getElementsByClassName("checklist").onsubmit = function(){remove_form(); return false}
+
 });
 
 function resetGyro() {
