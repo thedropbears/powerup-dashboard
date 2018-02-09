@@ -76,14 +76,6 @@ function onValueChanged(key, value, isNew) {
 }
 }
 
-function rotateCompass(heading) {
-    heading = heading - offsetGyro;
-    heading = Math.PI - heading; // gyro is the wrong way around
-    var robot = document.getElementById("gyro");
-    robot.style.transform = "rotate(" + heading + "rad)";
-
-}
-
 function onRobotConnection(connected) {
     if (connected) {
         $("#connection").text("Connected");
@@ -107,7 +99,7 @@ function remove_form() {
 
 function timerCycle() {
     var countDownDate = Math.floor(Date.now() / 1000) + 135;
-    var x = setInterval(function () {
+    setInterval(function () {
         var now = Math.floor(Date.now() / 1000);
         var difference = countDownDate - now;
 
