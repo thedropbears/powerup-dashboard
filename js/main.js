@@ -1,5 +1,5 @@
-var currentGyro = 0
-var offsetGyro = 0
+var currentGyro = 0;
+var offsetGyro = 0;
 
 $(document).ready(function() {
 
@@ -34,18 +34,17 @@ function onNetworkTablesConnection(connected) {
 }
 
 function updateLifterStatus(id) {
-    $("#l1").attr("class", "hidden-status")
-    $("#l2").attr("class", "hidden-status")
-    $("#l3").attr("class", "hidden-status")
-    $("#l4").attr("class", "hidden-status")
-    $("#" + id).attr("class", "inline")
+    $("#l1").attr("class", "hidden-status");
+    $("#l2").attr("class", "hidden-status");
+    $("#l3").attr("class", "hidden-status");
+    $("#l4").attr("class", "hidden-status");
+    $("#" + id).attr("class", "inline");
 }
 
-function onValueChanged(key, value, isNew) {
+function onValueChanged(key, value) {
     switch (key) {
         case "/SmartDashboard/gyro":
             rotateCompass(value + Math.PI);
-            currentGyro = value;
             break;
         case "/SmartDashboard/default_height":
             {
@@ -73,6 +72,11 @@ function onValueChanged(key, value, isNew) {
                 null;
             }
     }
+}
+
+function strategyUpdate() {
+    NetworkTables.putValue("SmartDashboard/start", $("#Start").val());
+    NetworkTables.putValue("SmartDashboard/strategy", $("#Strategy").val());
 }
 
 function onRobotConnection(connected) {

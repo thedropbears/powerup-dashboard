@@ -8,7 +8,6 @@
 }
 #camera{
     display: inline;
-    width: 50vw;
 }
 .orientation{
     border:solid black;
@@ -40,9 +39,9 @@
 }
 .hiddengyro{
     display: inline;
-    margin-right: 11vw;
+    margin-right: 1.5vw;
     width: 28vw;
-    height: 47.34vw;
+    height: auto;
     float: right;
     padding-left: 11vw;
     border-left: 4px solid white;
@@ -86,6 +85,11 @@ span{
     font-size:3vw;
     float:right;
 }
+.lift-status2{
+    font-size:3vw;
+    margin-top:4%;
+    float:right;
+}
 .hline{
     height: 120%;
     border:solid white;
@@ -98,11 +102,15 @@ span{
     display: inline;
 }
 #compass{
-    margin-top: 7vw;
-    width: 28vw;
+    margin-top: 4vw;
+    width: 16vw;
     height: auto;
 }
 .Selector{
     margin:5%;
     margin-bottom: 0%;
+}
+.background{
+    background-color: white;
+    color: black;
 }
