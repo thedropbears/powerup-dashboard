@@ -8,6 +8,7 @@
 }
 #camera{
     display: inline;
+    padding-left:150px;
 }
 .orientation{
     border:solid black;
