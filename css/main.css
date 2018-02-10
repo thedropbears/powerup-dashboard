@@ -54,11 +54,11 @@
     float: right;
 }
 .checklist{
-    font-size:3vw;
+    font-size:2vw;
 
 }
 input[type=checkbox]{
-    zoom:250%;
+    zoom:150%;
 }
 input[type=submit]{
     zoom:250%;
