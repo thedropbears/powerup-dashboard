@@ -56,7 +56,7 @@ function onValueChanged(key, value) {
                 timerCycle();
             }
             if (value != "disabled") {
-                null;
+                timerReset();
             }
             break;
         case "/lifter/state":
@@ -116,11 +116,12 @@ function timerCycle() {
         }
     }, 1000);
 }
-
+function timerReset(){
+    $('#timer').text('135');
+}
 function rotateCompass(heading) {
     heading = heading - offsetGyro;
     heading = Math.PI - heading; // gyro is the wrong way around
     var robot = document.getElementById("compass");
     robot.style.transform = "rotate(" + heading + "rad)";
-
 }
