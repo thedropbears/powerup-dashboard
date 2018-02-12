@@ -68,8 +68,6 @@ function onValueChanged(key, value) {
                 updateLifterStatus("l3");
             } else if (value === "upper_scale") {
                 updateLifterStatus("l4");
-            } else {
-                null;
             }
     }
 }

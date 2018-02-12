@@ -1,4 +1,4 @@
-*{
+.all{
     background-color: rgb(0, 0, 0);
     font-family: "Roboto",sans-serif;
     color: rgb(223, 48, 48);
@@ -12,7 +12,6 @@
 }
 .orientation{
     border:solid black;
-    padding: 0%;
     margin-left: 52%;
     padding-bottom: 30%;
     width: 50vw;
@@ -20,8 +19,6 @@
 }
 .timer{
     font-size: 10vw;
-    width: 20vw;
-    height: 12vw;
     margin: auto;
     display: inline;
     vertical-align: top;
@@ -41,10 +38,9 @@
 .hiddengyro{
     display: inline;
     margin-right: 1.5vw;
-    width: 28vw;
-    height: auto;
     float: right;
     padding-left: 11vw;
+    padding-right: 8.5vw;
     border-left: 4px solid white;
 }
 .hidden-status{
@@ -65,14 +61,11 @@ input[type=submit]{
     margin-left: 2.5%;
     margin-bottom:1%;
 }
-legend{}
 #auto-select{
     background-color:white;
     display: inline;
-    width: fit-content;
 }
 #connection{
-    width: 10vw;
     display: inline;
 }status
 span{
@@ -92,7 +85,6 @@ span{
     float:right;
 }
 .hline{
-    height: 120%;
     border:solid white;
     display: inline;
 }
@@ -109,7 +101,6 @@ span{
 }
 .Selector{
     margin:5%;
-    margin-bottom: 0%;
 }
 .background{
     background-color: white;
