@@ -2,7 +2,10 @@ var currentGyro = 0;
 var offsetGyro = 0;
 
 $(document).ready(function() {
-
+    $("#mainform").submit(function(e) {
+        e.preventDefault();
+        remove_form();
+    });
     // sets a function that will be called when the websocket connects/disconnects
     NetworkTables.addWsConnectionListener(onNetworkTablesConnection, true);
 
@@ -16,11 +19,6 @@ $(document).ready(function() {
     // hook up our SendableChoosers to combo boxes
     attachSelectToSendableChooser("#auto-selector", "/SmartDashboard/Autonomous Mode");
 
-    $("#mainform").submit(function(e) {
-        e.preventDefault();
-        remove_form();
-    });
-
 });
 
 function resetGyro() {
@@ -29,14 +27,6 @@ function resetGyro() {
     rotateCompass(currentGyro + Math.PI);
 }
 
-
-function onNetworkTablesConnection(connected) {
-    if (connected) {
-        null;
-    } else {
-        null;
-    }
-}
 
 function updateLifterStatus(id) {
     $("#l1").attr("class", "hidden-status");
