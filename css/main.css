@@ -1,0 +1,115 @@
+.all{
+    background-color: rgb(0, 0, 0);
+    font-family: "Roboto",sans-serif;
+    color: rgb(223, 48, 48);
+}
+.TB{
+    height: 12vw;
+}
+#camera{
+    display: inline;
+    padding-left:150px;
+}
+.orientation{
+    border:solid black;
+    margin-left: 52%;
+    padding-bottom: 30%;
+    width: 50vw;
+    float: right;
+}
+.timer{
+    font-size: 10vw;
+    margin: auto;
+    display: inline;
+    vertical-align: top;
+}
+.TBR2{
+    border:solid white;
+    padding-top: 3.5%;
+    padding-bottom: 3.5%;
+    margin-left:0.25%;
+    margin-right:0.25%;
+    font-size:210%;
+    float:right;
+}
+.hidden{
+    display: none;
+}
+.hiddengyro{
+    display: inline;
+    margin-right: 1.5vw;
+    float: right;
+    padding-left: 11vw;
+    padding-right: 8.5vw;
+    border-left: 4px solid white;
+}
+.hidden-status{
+    display: none;
+}
+.selector{
+    float: right;
+}
+.checklist{
+    font-size:2vw;
+
+}
+input[type=checkbox]{
+    zoom:150%;
+}
+input[type=submit]{
+    zoom:250%;
+    margin-left: 2.5%;
+    margin-bottom:1%;
+}
+#auto-select{
+    background-color:white;
+    display: inline;
+}
+#connection{
+    display: inline;
+    font-size: 5vw;
+}status
+span{
+    vertical-align: middle;
+}
+.lifter{
+    font-size: 3vw;
+    display: inline;
+}
+.lift-status{
+    font-size:3vw;
+    float:right;
+}
+.lift-status2{
+    font-size:3vw;
+    margin-top:2%;
+    margin-right:1%;
+    float:right;
+}
+.hline{
+    border:solid white;
+    display: inline;
+}
+.border{
+    border:solid white;
+}
+.inline{
+    display: inline;
+}
+#compass{
+    margin-top: 4vw;
+    width: 16vw;
+    height: auto;
+}
+.Selector{
+    margin:5%;
+}
+.background{
+    background-color: white;
+    color: black;
+}
+.cTimer{
+    margin-left:4.5vw;
+    font-size: 10vw;
+    font-weight: bold;
+}

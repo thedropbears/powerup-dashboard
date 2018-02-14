@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html class=all>
+
+<head>
+    <title>4774-Dashboard</title>
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="images/favicon.jpg" type="image/x-icon">
+    <script src="/networktables/networktables.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/d3.min.js"></script>
+    <script src="/networktables/utils.js"></script>
+    <script src="js/main.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="TB">
+
+        <!-- Timer -->
+        <h1 id="timer" class="timer">135</h1>
+
+        <!-- Auto selector -->
+        <select id=auto-select class=Selector>
+            </select>
+        <!-- Connection status -->
+        <div style="display: inline-block">
+            <h1 id=connection>Disconnected</h1>
+            <span class=cTimer id=cTimer>00</span>
+        </div>
+        <!-- Lifter position -->
+        <div class="lift-status2">
+            <div class="lifter">Lifter:</div>
+            <div class="lift-status" id="l1">Switch</div>
+            <div class="hidden-status" id="l2">Lower Scale</div>
+            <div class="hidden-status" id="l3">Balanced Scale</div>
+            <div class="hidden-status" id="l4">Upper Scale</div>
+            <br>
+            <div class="lifter">Cube: </div>
+            <div class="hidden-status" id=c1>Inside</div>
+            <div class="lifter" id=c2>None</div>
+        </div>
+        <div>
+        </div>
+
+    </div>
+    <hr class="border">
+    <!-- Camera stream -->
+    <span class="hidden">
+                <img src="http://rpi3-4774.local:1181/stream.mjpg" id="camera" alt="Stream not found" class="inline" width=475px>
+            </span>
+    <!-- Orientation -->
+    <span class="hiddengyro">
+                <img src=robotred.png id="compass">
+            </span>
+
+    <!-- Checklist -->
+    <div>
+        <form id="mainform" class="checklist">
+            <legend>Checklist: </legend>
+            <input type="checkbox" required> Is robot connected?<br>
+            <input type="checkbox" required> Select Auto<br>
+            <input type="checkbox" required> Is cube loaded?<br>
+            <input type="checkbox" required> Is controller connected?<br>
+            <input type="checkbox" required> Is pneumatics charged?<br>
+            <input type="checkbox" required> Is btattery loaded and charged?<br>
+            <input type="checkbox" required> Is robot book on hand?<br>
+            <input type="checkbox" required> Are arms retracted?<br>
+            <input type="submit" class="submit">
+        </form>
+    </div>
+
+</body>
+
+</html>
